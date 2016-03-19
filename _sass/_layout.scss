@@ -2,30 +2,66 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    padding-top:14px;
+    border-bottom: 10px solid #334;
+    //max-height: 40px;
+    //padding-bottom:10px;
+    background-color:$background-color;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    box-shadow: 0px 5px 3px #888888;
+}
+
+.nav-wrapper{
+    text-align: center;
+    //background-color:#FFFFFF;
+    //border-right: 1px solid #334;
+    //border-left: 1px solid #334;
+    border-bottom: 1px solid #334;
+}
+
+.navigation{
+    position:relative;
+    text-align:center;
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    padding-top:10px;
+    font-size: 12px;
+    line-height: 26px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color:#A29FA0;
+    //width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+    font-weight: 400;
+    font-family: 'Libre Baskerville';
+    //border-bottom: 1px solid #333;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #A29FA0;
+    }
+    &:hover {
+        color: #0C090A;
     }
 }
 
 .site-nav {
-    float: right;
+    float: left;
+    margin-left:20px;
+    margin-right:auto;
     line-height: 56px;
+    //width:100%;
+    //margin-top:20px;
+    font-size:12px;
+    font-family: 'Libre Baskerville';
+
+    
 
     .menu-icon {
         display: none;
@@ -34,6 +70,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size:14px;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -49,6 +86,7 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+        width:auto;
 
         .menu-icon {
             display: block;
@@ -92,7 +130,7 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid #334;
     padding: $spacing-unit 0;
 }
 
@@ -162,11 +200,15 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    //padding: $spacing-unit 0;
+    margin-top:20px;
 }
 
 .page-heading {
     font-size: 20px;
+    border-bottom: 1px solid #334;
+    padding:5px;
+    color:#334;
 }
 
 .post-list {
@@ -174,33 +216,48 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit - 10;
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    margin-left: 20px;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+    //display: block;
+    font-size: 14px;
 }
 
+.page-link{
+    font-size: 14px;
+}
 
 
 /**
  * Posts
  */
+
+.post .post-meta{
+    float: right;
+    font-family: 'Italianno';
+    font-size: 36px;
+}
+
 .post-header {
     margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 64px;
+    font-weight: 700;
     letter-spacing: -1px;
     line-height: 1;
+    text-align:center;
+    color:$brand-color;
+    font-family: 'Italianno', sans-serif;
 
     @include media-query($on-laptop) {
         font-size: 36px;

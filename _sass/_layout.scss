@@ -242,8 +242,8 @@
 
 .post .post-meta{
     float: right;
-    font-family: 'Italianno';
-    font-size: 36px;
+    font-family: 'Montserrat';
+    font-size: 24px;
 }
 
 .post-header {
@@ -251,13 +251,13 @@
 }
 
 .post-title {
-    font-size: 64px;
+    font-size: 36px;
     font-weight: 700;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.4;
     text-align:center;
     color:$brand-color;
-    font-family: 'Italianno', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
     @include media-query($on-laptop) {
         font-size: 36px;

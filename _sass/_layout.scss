@@ -2,8 +2,9 @@
  * Site header
  */
 .site-header {
-    padding-top:14px;
-    border-bottom: 1px solid #7F7271;
+    padding-top:12px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #1B1B1B;
     border-top: 4px solid #FF786d;
     //max-height: 40px;
     //padding-bottom:10px;
@@ -12,6 +13,8 @@
     // Positioning context for the mobile navigation icon
     position: relative;
     //box-shadow: 0px 5px 3px #888888;
+    /* Line: */
+    width:100%;
 }
 
 .nav-wrapper{
@@ -234,6 +237,7 @@
 .page-content {
     //padding: $spacing-unit 0;
     margin-top:20px;
+    //position:relative;
 }
 
 .page-heading {

@@ -3,14 +3,15 @@
  */
 .site-header {
     padding-top:14px;
-    border-bottom: 10px solid #334;
+    border-bottom: 1px solid #7F7271;
+    border-top: 4px solid #FF786d;
     //max-height: 40px;
     //padding-bottom:10px;
     background-color:$background-color;
 
     // Positioning context for the mobile navigation icon
     position: relative;
-    box-shadow: 0px 5px 3px #888888;
+    //box-shadow: 0px 5px 3px #888888;
 }
 
 .nav-wrapper{
@@ -28,38 +29,52 @@
 
 .site-title {
     padding-top:10px;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 26px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    color:#A29FA0;
+    color:#FF786D;
     //width:100%;
     margin-right: auto;
     margin-left: auto;
     text-align:center;
     font-weight: 400;
-    font-family: 'Libre Baskerville';
+    font-family: 'microgramma com';
     //border-bottom: 1px solid #333;
 
     &,
     &:visited {
-        color: #A29FA0;
+        color: #FF786D;
     }
     &:hover {
         color: #0C090A;
     }
 }
 
+.contact{
+    width:100%;
+    float:left;
+    margin-top:0;
+    line-height:18px;
+}
+
+.contact-link {
+    font-family: 'Bembo Infant MT Std';
+    line-height: 18px;
+    font-size:12px;
+    color:#000;
+}
+
 .site-nav {
-    float: left;
-    margin-left:20px;
+    float: right;
+    margin-left:168px;
     margin-right:auto;
-    line-height: 56px;
-    //width:100%;
+    line-height: 26px;
+    padding-top:10px;
     //margin-top:20px;
     font-size:12px;
-    font-family: 'Libre Baskerville';
+    font-family: 'Bembo Infant MT Std';
 
     
 
@@ -69,12 +84,14 @@
 
     .page-link {
         color: $text-color;
-        line-height: $base-line-height;
-        font-size:14px;
+        line-height: 26px;
+        font-size:12px;
+        text-align:center;
+
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 20px;
+            margin-left: 82px;
         }
     }
 
@@ -120,6 +137,7 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+            text-align:right;
         }
     }
 }
@@ -199,6 +217,20 @@
 /**
  * Page content
  */
+
+ .page-title {
+    font-family: 'microgramma com';
+    font-size:18px;
+ }
+
+ .recent-page-title {
+    font-family: 'microgramma com';
+    font-size:18px;
+    border-bottom: 1px solid #979797;
+    margin-top:40px;
+ }
+
+
 .page-content {
     //padding: $spacing-unit 0;
     margin-top:20px;
@@ -216,20 +248,30 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit - 10;
+        margin-bottom: $spacing-unit + 20;
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-    margin-left: 20px;
+    //margin-left: 20px;
+    float:right;
 }
 
 .post-link {
     //display: block;
+    font-family: 'microgramma com';
     font-size: 14px;
+    margin-bottom:4px;
+    line-height: 2.4;
 }
+
+.post-list h2 {
+    margin-bottom:0px;
+    line-height:.5;
+}
+
 
 .page-link{
     font-size: 14px;
@@ -242,8 +284,8 @@
 
 .post .post-meta{
     float: right;
-    font-family: 'Montserrat';
-    font-size: 24px;
+    font-family: 'Microgramma com';
+    font-size: 18px;
 }
 
 .post-header {
@@ -251,13 +293,13 @@
 }
 
 .post-title {
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: -1px;
-    line-height: 1.4;
-    text-align:center;
-    color:$brand-color;
-    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    color:#454444;
+    font-family: 'Microgramma com', sans-serif;
+    margin-top:60px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -290,4 +332,52 @@
             font-size: 18px;
         }
     }
+}
+
+.post-content p{
+
+width:78%;
+}
+
+.post-content blockquote {
+
+    float:right;
+    font-size:9px;
+    width:20%;
+    margin-left:40px;
+    text-align:left;
+    clear:both;
+    font-weight: bold;
+
+    @include media-query($on-palm) {
+        width:80%;
+        float:left;
+        margin-left:0;
+        margin-bottom:10px;
+    }
+
+}
+
+.post-list p{
+
+width:100%;
+}
+
+.post-list blockquote {
+
+    float:right;
+    font-size:9px;
+    width:20%;
+    margin-left:40px;
+    text-align:left;
+    clear:both;
+    font-weight: bold;
+    overflow:hidden;
+    display:none;
+
+}
+
+.post-list li {
+
+    //overflow:hidden;
 }

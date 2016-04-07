@@ -40,7 +40,7 @@
     margin-left: auto;
     text-align:center;
     font-weight: 400;
-    font-family: 'microgramma com';
+    //font-family: 'microgramma com';
     //border-bottom: 1px solid #333;
 
     &,
@@ -60,7 +60,7 @@
 }
 
 .contact-link {
-    font-family: 'Bembo Infant MT Std';
+    //font-family: 'Bembo Infant MT Std';
     line-height: 18px;
     font-size:12px;
     color:#000;
@@ -74,7 +74,7 @@
     padding-top:10px;
     //margin-top:20px;
     font-size:12px;
-    font-family: 'Bembo Infant MT Std';
+    //font-family: 'Bembo Infant MT Std';
 
     
 
@@ -219,12 +219,12 @@
  */
 
  .page-title {
-    font-family: 'microgramma com';
+    //font-family: 'microgramma com';
     font-size:18px;
  }
 
  .recent-page-title {
-    font-family: 'microgramma com';
+    //font-family: 'microgramma com';
     font-size:18px;
     border-bottom: 1px solid #979797;
     margin-top:40px;
@@ -261,7 +261,7 @@
 
 .post-link {
     //display: block;
-    font-family: 'microgramma com';
+    //font-family: 'microgramma com';
     font-size: 14px;
     margin-bottom:4px;
     line-height: 2.4;
@@ -284,7 +284,7 @@
 
 .post .post-meta{
     float: right;
-    font-family: 'Microgramma com';
+    //font-family: 'Microgramma com';
     font-size: 18px;
 }
 
@@ -298,7 +298,7 @@
     letter-spacing: -1px;
     line-height: 1;
     color:#454444;
-    font-family: 'Microgramma com', sans-serif;
+    //font-family: 'Microgramma com', sans-serif;
     margin-top:60px;
 
     @include media-query($on-laptop) {

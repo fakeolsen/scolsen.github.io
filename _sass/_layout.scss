@@ -52,14 +52,13 @@
         box-shadow: 1px 3px 5px #7f3231;
     }
      @include media-query($narrow) {
-        font-size: 18px;
-        padding:4px;
-        line-height:1.4;
+         margin-left: 1%;
     }
-    @include media-query($on-laptop) {
+    @include media-query(1190px) {
         font-size: 18px;
         padding:4px;
         line-height:1.4;
+        margin-left: 5%;
     }
 }
 

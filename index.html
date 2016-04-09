@@ -5,22 +5,36 @@ layout: default
 <div class="home">
 
   <!--<h1 class="page-heading">Posts</h1>-->
-<h2 class="post-title">About</h2>
-{% for page in site.pages %}
-{% if page.title == 'About' %}
-<p>{{page.content}}</p>
+  <div class="update-wrapper">
+  <h3 class="update-title">Latest Update</h3>
+  {% for post in site.posts %}
+{% if post.categories contains 'update' %}
+    <p class="update">{{ post.content }}</p>
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="feature-wrapper">
+<h2 class="post-title-feature">Featured Work</h2>
+{% for post in site.posts %}
+{% if post.categories contains 'feature' %}
+<h3 class="post-title-min"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>
+<p class="feature-text">{{ post.ex | truncatewords: 200 }}</p>
 {% endif %}
   {% endfor %}
-<h2 class="recent-page-title">Recent Posts</h2>
+</div>
+<div class="recent-wrapper">
+<h2 class="recent-page-title">Recent Work</h2>
   <ul class="post-list">
     {% for post in site.posts %}
-    {% if post.categories contains 'draft' %}
-    
+    {% if post.categories contains 'draft' or post.categories contains 'update'  %}
+
     {% else %}
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <h4 class="post-categories">{{ post.categories | join: ', ' }}.</h4>
          <p>{{ post.ex | truncatewords: 200 }}</p>
          <a class="continue" href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -28,7 +42,7 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-
+</div>
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>

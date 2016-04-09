@@ -6,16 +6,16 @@
 
 
 // Our variables
-$base-font-family: 'Bembo Infant MT Std', serif;
-$base-font-size:   14px;
+$base-font-family: "Operator SSm A", "Operator SSm B", serif;
+$base-font-size:   12px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 2.0;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #2e2e2e;
 $background-color: #fff;
-$brand-color:      #FF786D;
+$brand-color:      #ff4743;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -26,7 +26,7 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
+$narrow:		   1300px;
 
 
 // Using media queries with like this:

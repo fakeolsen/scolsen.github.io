@@ -16,6 +16,11 @@
         <a class="page-link" href="{{site.baseurl}}/essays.html"> Essays</a>
          <a class="page-link" href="{{site.baseurl}}/fiction.html"> Fiction</a>
           <a class="page-link" href="{{site.baseurl}}/other.html"> Other</a>
+          {% for page in site.pages %}
+          {% if page.title == 'About' %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"> {{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
           <a class="page-link" href="mailto:scg.olsen@gmail.com"> Contact</a>
         <!--{% for page in site.pages %}
           {% if page.title %}

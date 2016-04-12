@@ -6,7 +6,7 @@ layout: default
   <h1 class="page-title">Other</h1>
   <ul class="post-list">
     {% if site.categories.other == null %}
-    {%include 404.html %}
+    {%include coming-soon.html %}
     {% else %}
     {% for post in site.posts %}
       {% if post.categories contains 'other'%}

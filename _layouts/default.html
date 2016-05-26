@@ -6,7 +6,7 @@
   <body>
 
     {% include header.html %}
-    {% if page.url == site.baseurl %}
+    {% if page.title contains 'home'%}
   <div class="hero">
     <div class="curtain"></div>
       <div class="hero-wrapper">

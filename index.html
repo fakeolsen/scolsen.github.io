@@ -1,47 +1,36 @@
 ---
 layout: default
+title: index
 ---
 
 <div class="home">
-
   <!--<h1 class="page-heading">Posts</h1>-->
-  <div class="update-wrapper">
-  <h3 class="update-title">Latest Update</h3>
-  {% for post in site.posts %}
-{% if post.categories contains 'update' %}
-    <p class="update">{{ post.content }}</p>
-    {% endif %}
-  {% endfor %}
-</div>
 <div class="feature-wrapper">
-<h2 class="post-title-feature">Featured Work</h2>
+<!--<h1 class="post-title-feature">Welcome</h1>
+<p class="welcome">This is the personal site of Scott Olsen. You'll find a collection of some of my written work on this site. I'm happy you stopped by and hope you get some enjoyment out of my essays or fictions. You can access the most recently posted content below. </p>-->
 {% for post in site.posts %}
-{% if post.categories contains 'feature' %}
-<h3 class="post-title-min"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>
-<p class="feature-text">{{ post.ex | truncatewords: 200 }}</p>
-{% endif %}
-  {% endfor %}
+{%if post.categories contains 'note'%}
+<div class='min-wrp-note'>
+<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
+<h3 class="post-title-min-note"><span>{{ post.title }}</span></h3>
+<div class="c-wrapper-note">
+<p class="feature-text-note">{{ post.content }}</p>
 </div>
-<div class="recent-wrapper">
-<h2 class="recent-page-title">Recent Work</h2>
-  <ul class="post-list">
-    {% for post in site.posts %}
-    {% if post.categories contains 'draft' or post.categories contains 'update'  %}
-
-    {% else %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <h4 class="post-categories">{{ post.categories | join: ', ' }}.</h4>
-         <p>{{ post.ex | truncatewords: 200 }}</p>
-         <a class="continue" href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
-         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+<!--<span class="post-meta-note">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+</div>
+{%else%}
+<div class='min-wrp'>
+<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
+<h3 class="post-title-min"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+<div class="c-wrapper">
+<p class="feature-text">{{ post.ex | truncatewords: 200 }}</p>
+<a class="continue" href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
+</div>
+<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<p class="post-abstract">{{post.abstract}}</p>
+</div>
+{%endif%}
+  {% endfor %}
 </div>
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 

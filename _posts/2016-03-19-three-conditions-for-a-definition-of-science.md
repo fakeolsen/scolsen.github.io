@@ -3,11 +3,15 @@ layout: post
 title: "Three Conditions for a Definition of Science"
 date: 2016-03-19 12:00:00
 categories: writing philosophy essay feature
+related: Parapet for the Pauper Form and Counterform
+abstract: This piece explores three potential conditions for a definition of science.
 ex: "Determining what science actually is reigns the foremost problem philosophy of science ought to try to answer. Some approaches are more successful than others, and some more readily fit the descriptive pictures of science we intuitively construct. Perhaps, however, a philosophy of science ought to offer not only a descriptive, but a normative answer to the question “what is science,” suggesting not only what science currently is, but what it ought to be. Normative definitions of science consider science in its own right, regardless of current practice, and hold science to a particular standard. Definitions which are descriptive in nature consider the daily practices we label scientific and the communities responsible for them. Let us consider some of the answers philosophers have provided to the question, and see if we can forge a balanced definition of science, which provides both a descriptive and normative account..."
 ---
 > **Note:** I wrote this essay in the spring of 2015 and presented it at the 2016 Annual Greater Philadelphia Consortium Philosophy Undergraduate Conference. I'm hoping to make improvements to the piece in the future. Currently I'm still working out the best means of presenting bibliographic information as well as inline notes via jekyll, so for now the notes to the piece are left out and the minuscule works cited is present at the end. 
 
 Determining what science actually *is* reigns the foremost problem philosophy of science ought to try to answer. Some approaches are more successful than others, and some more readily fit the descriptive pictures of science we intuitively construct. Perhaps, however, a philosophy of science ought to offer not only a descriptive, but a normative answer to the question “what is science,” suggesting not only what science currently is, but what it ought to be. Normative definitions of science consider science *in its own right*, regardless of current practice, and hold science to a particular standard. Definitions which are descriptive in nature consider the daily practices we label scientific and the communities responsible for them. Let us consider some of the answers philosophers have provided to the question, and see if we can forge a balanced definition of science, which provides both a descriptive and normative account. 
+
+##Introduction
 
 Karl Popper’s distinction of the scientific from the unscientific is a normative distinction we might find intuitively agreeable; at least prior to further consideration. Popper defines the scientific as that which “has the potential to be refuted by some possible observation” (Godfrey-Smith 58). For instance, my notion that ‘all swans are red’ is a refutable scientific proposition (of course such a bold claim does not seem at all scientific to our immediate sensibilities, which we will get to later). A swan’s being red or any color is a readily observable phenomena. We only require one trustworthy sighting of a single non-red swan to refute my proposition—thus proceeds Popper’s cycle of conjecture and refutation—I conjectured that all swans are red, a single non-red swan refuted the claim, and now we can move forward scientifically by positing a new refutable conjecture. 
 
@@ -35,6 +39,6 @@ Regarding condition (3.), we find that it is tricky to falsify any of the compet
 
 In sum, we have developed three criteria by which we may define science. Furthermore, the criteria can be used as a sort of scale, to determine the current status of a field which has the *potential* to become scientific given further development. Ultimately our definition will need to be either proved or disproved with a thorough examination of the history of science. Indeed, I suggest it is even likely that there are quite a few instances that would disprove it, or at the very least suggest it needs to be reformed. We have here set down a preliminary. There are further nuances, such as the notion of scientific progress that need to be addressed. With these weaknesses in mind I hope I have, at the very least, provided a basis by which we might begin conceiving of a definition of science which is both descriptive and normative and which entails both its social aspects as well as constraints that should avoid including anything which we normally would not consider science, science. 
 
-# Works Cited
+##Works Cited
 
 Godfrey-Smith. Theory and Reality. Chicago: University of Chicago Press, 2003. Print.

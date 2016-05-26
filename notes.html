@@ -4,14 +4,14 @@ layout: default
 
 <div class="home">
   <div class="feature-wrapper">
-  <h1 class="post-title-feature">Fiction</h1>
-  <p class="welcome">This is the personal site of Scott Olsen. This site is more or less a content dump of personal essays and other projects. I put them up here for you to enjoy or to scoff at because I’ve taken a small pretension and assume they might be useful somehow for somebody. In short, think of this as a sort of portfolio.</p>
+  <h1 class="post-title-feature">Notes</h1>
+  <p class="welcome">This page contains notes. Notes are shorter, often casual, thoughts or observations on a particular topic or text. They may be a good source of momentary reflection. I hope they generate interest and support your own thinking and examinations. Let me know.</p>
   <ul class="post-list">
-    {% if site.categories.fiction == null %}
+    {% if site.categories.note == null %}
     {%include 404.html %}
     {% else %}
     {% for post in site.posts %}
-      {% if post.categories contains 'fiction'%}
+      {% if post.categories contains 'note'%}
       <div class='min-wrp-sub'>
 <h3 class="post-title-min-sub"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 

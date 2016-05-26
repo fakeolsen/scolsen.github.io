@@ -1,8 +1,8 @@
 <header class="site-header">
 
-<a class="site-title" href="{{ site.baseurl }}/">olsen.<br>works</a>
+<a class="site-title" href="{{ site.baseurl }}/">olsen.works</a>
 
-  <div class="special-wrapper">
+ 
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -15,19 +15,20 @@
       <div class="trigger">
         <a class="page-link" href="{{site.baseurl}}/essays.html"> Essays</a>
          <a class="page-link" href="{{site.baseurl}}/fiction.html"> Fiction</a>
-          <a class="page-link" href="{{site.baseurl}}/other.html"> Other</a>
+          <a class="page-link" href="{{site.baseurl}}/notes.html"> Notes</a>
+          <a class="page-link" href="mailto:scg.olsen@gmail.com"> Contact</a>
           {% for page in site.pages %}
           {% if page.title == 'About' %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"> {{ page.title }}</a>
           {% endif %}
         {% endfor %}
-          <a class="page-link" href="mailto:scg.olsen@gmail.com"> Contact</a>
+          <a class="page-link" href="{{site.baseurl}}/work-with.html">Work with Me</a>
         <!--{% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}"> {{ page.title }}</a>
           {% endif %}
         {% endfor %}-->
-      </div>
+   
     </nav>
    <!--<div class="contact">
     <a class="contact-link" href="mailto:scg.olsen@gmail.com">scg.olsen@gmail.com</a>

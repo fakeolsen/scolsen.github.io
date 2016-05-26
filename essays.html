@@ -3,24 +3,27 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-title">Essays</h1>
+  <div class="feature-wrapper">
+  <h1 class="post-title-feature">Essays</h1>
+  <p class="welcome">This is the personal site of Scott Olsen. This site is more or less a content dump of personal essays and other projects. I put them up here for you to enjoy or to scoff at because I’ve taken a small pretension and assume they might be useful somehow for somebody. In short, think of this as a sort of portfolio.</p>
   <ul class="post-list">
     {% if site.categories.essay == null %}
     {%include 404.html %}
     {% else %}
     {% for post in site.posts %}
       {% if post.categories contains 'essay'%}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <h4 class="post-categories">{{ post.categories | join: ', ' }}.</h4>
-         <p>{{ post.ex | truncatewords: 200 }}</p>
-         <a class="continue" href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
-         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </li>
+      <div class='min-wrp-sub'>
+<h3 class="post-title-min-sub"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+
+<div class="c-wrapper-sub">
+<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
+<p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+<a class="continue" href="{{ post.url | prepend: site.baseurl }}">Read</a>
+</div>
+<span class="post-meta-sub">{{ post.date | date: "%b %-d, %Y" }}</span>
       {% endif %}
     {% endfor %}
   </ul>
 {% endif %}
+</div>
 </div>

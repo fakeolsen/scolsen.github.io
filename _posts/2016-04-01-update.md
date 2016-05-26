@@ -1,8 +1,0 @@
----
-layout: post
-title: "Update"
-date: 2016-01-01 12:00:00
-categories: update
----
-
-I've made some big design changes to this site. I hope they are improvements on the last iteration. Let me know what you think!

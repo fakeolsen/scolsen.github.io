@@ -305,7 +305,7 @@
 
     @include media-query($on-palm) {
         width:100%;
-        margin-top:40px;
+        margin-top:30px;
     }
 }
 
@@ -941,6 +941,9 @@ width:100%;
     transition-timing-function: ease;
     }
     overflow:hidden;
+     @include media-query($on-palm) {
+        height:700px;
+    }
 }
 
 .curtain{

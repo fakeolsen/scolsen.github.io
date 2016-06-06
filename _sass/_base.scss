@@ -1,6 +1,4 @@
-/**
- * Reset some basic elements
- */
+/////reset/////
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -8,26 +6,25 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+/////animations/////
+@keyframes opLoad{
+    from {opacity:0;}
+    to{opacity:1;}
+}
 
 
-/**
- * Basic styling
- */
+//////basic styling/////
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-family: $font-body;
+    font-size: $font-body-size;
+    line-height: $body-line-height;
     font-weight: 200;
-    color: $text-color;
+    color: $body-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+/////vertical rythym/////
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -35,40 +32,26 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
-/**
- * Images
- */
+/////images/////
 img {
     max-width: 100%;
     vertical-align: middle;
 }
 
-
-
-/**
- * Figures
- */
+/////figures/////
 figure > img {
     display: block;
 }
 
 figcaption {
-    font-size: $small-font-size - 2px;
+    font-size: $small-font-size;
     float:left;
     width:100%;
-    padding-left:34%;
-    font-family:"Operator";
-    font-weight:700;
-    margin-bottom:20px;
+    padding:10px;
+    font-family: $font-heading;
 }
 
-
-
-/**
- * Lists
- */
+/////lists/////
 ul, ol {
     margin-left: $spacing-unit;
 }
@@ -80,12 +63,9 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
+/////headings/////
 h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
     font-weight: 300;
 }
 
@@ -93,54 +73,35 @@ h1{
         float:left;
 }
 
-
-/**
- * Links
- */
+/////links/////
 a {
-    color: $brand-red;
-    text-decoration: none;
-    transition-property: border-bottom-width;
-       transition-duration:100ms;
-       transition-timing-function: linear; 
-       transition-delay: initial;
-       border-bottom: 0px solid $brand-black;
-
+    color: $link-color;
+    text-decoration:none;
+    transition:color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
     &:visited {
-        //color: darken($brand-color, 15%);
+        //
     }
 
     &:hover {
-       transition-property: border-bottom-width;
-       transition-duration:100ms;
-       transition-timing-function: linear; 
-       transition-delay: initial;
-       border-bottom: 4px solid $brand-black;
-    }
+        transition: color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        color:$black-color;
+   }
 }
 
-
-
-/**
- * Blockquotes
- */
+/////blockquotes/////
 blockquote {
     font-size: 9px;
-    //border: 1px solid $grey-color-light;
-    //border-radius: 3px;
-    //background-color: #f5f5f5;
-    //padding: 8px 12px;
 
     > :last-child {
         margin-bottom: 0;
     }
 }
 
-
-
-/**
- * Code formatting
- */
+/////code formatting/////
 pre,
 code {
     font-size: 15px;
@@ -164,74 +125,39 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
+/////wrappers/////
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 16));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: 8.3%;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    animation-name: opLoad;
+    animation-duration:500ms;
+    animation-timing-function: linear;
+    animation-direction:forward;
+    max-width: 44%;
+    margin-left: 14%;
+    margin-right:50%;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+    @include media-query($small-desktop) {
+        max-width: 44%;
+        margin-right:40%;
+    }
+    @include media-query($on-palm) {
+        max-width: 80%;
+        margin-right:10%;
+        margin-left:10%;
     }
 }
 
 .hero-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 16));
-    max-width:         65%;
-    margin-right: auto;
-    margin-left: 8.3%;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-.nav-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 8));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 8));
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    margin-bottom:150px;
+    margin-top:50px;
+    border-bottom: 1px solid $black-color;
+    padding:20px;
+    background-color:$black-color;
+    background-image: url("../images/blk.png");
+    color:#fff;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-.special-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 16));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    padding-bottom:8px;
-    @extend %clearfix;
-
-
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
@@ -248,7 +174,6 @@ pre {
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
@@ -257,12 +182,8 @@ pre {
     }
 }
 
-
-/**
- * Clearfix
- */
+/////clearfix/////
 %clearfix {
-
     &:after {
         content: "";
         display: table;
@@ -270,19 +191,13 @@ pre {
     }
 }
 
-
-
-/**
- * Icons
- */
+/////icons/////
 .icon {
-
     > svg {
         display: inline-block;
         width: 16px;
         height: 16px;
         vertical-align: middle;
-
         path {
             fill: $grey-color;
         }

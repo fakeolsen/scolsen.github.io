@@ -2,8 +2,9 @@
 layout: post
 title: "Form and Counterform"
 date: 2016-04-21 12:00:00
-categories: writing essay feature 
-abstract: This essay explores a conceptual notion similar to the Foil through the characters of Macbeth.
+categories: essay 
+render: normal
+abstract: This essay explores a conceptual notion similar to the Foil through the characters of Macbeth. 
 ex: "In that arcane and scrupulous art known as typography there exists a notion fundamental to the construction of the letter, the basest of the typographer's elements: *Form and Counterform*. Perhaps notion is a misnomer. Form and Counterform is a relation of constitutive character--change one and you necessarily change the other. The form is the part of the letter we all recognize without difficulty--the actual strokes and shapes which make up the letters. The curves and angles of ink on the page. The counterform is a bit more subtle. It is comprised of the negative space surrounding the letter strokes--the empty innards of the letter o..."
 ---
 

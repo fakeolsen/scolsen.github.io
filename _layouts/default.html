@@ -1,33 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
+{% include head.html %}
   <body>
-
     {% include header.html %}
-    {% if page.title contains 'home'%}
-  <div class="hero">
-    <div class="curtain"></div>
-      <div class="hero-wrapper">
-        <h1 class="post-title-feature">Welcome</h1>
-    <p class="welcome">This is the personal site of Scott Olsen. You'll find a collection of some of my written work on this site. I'm happy you stopped by, and hope you get some enjoyment out of my essays or fictions. You can access the most recently posted content below. </p>
-  </div>
-  </div>
-  {% endif %}
-<div class="home-wrapper">
-<!--<a class="site-title" href="{{ site.baseurl }}/">return to index</a>-->
-</div>
     <div class="page-content">
-      <div class="wrapper">
-
         {{ content }}
         {% include footer.html %}
-      </div>
     </div>
-
-    
-
   </body>
-
 </html>

@@ -1,213 +1,145 @@
-/**
- * Site header
- */
+/////site-header/////
 .site-header {
-    padding-bottom:10px;
-    // Positioning context for the mobile navigation icon
-    position: fixed;
-    /* Line: */
-    width:29.6%;
-    transition-property: width, margin-left;
-    transition-duration: 350ms;
-    transition-timing-function: ease;
-    float:right;
-    margin-left:100 - 29.6%;
-    z-index:10;
-
-        @include media-query($narrow) {
-            transition-property: width, margin-left, background-color;
-            transition-duration: 350ms;
-            transition-timing-function: ease;
-            width:100%;
-            margin-left:0;
+        width:44%;
+        margin-left:14%;
+        position:fixed;
+        top:0px;
+        z-index:20;
+        background-color:rgba(255,255,255,1);
+        transition:border-bottom, top;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        border-bottom:0px solid $black-color;
+        @include media-query($small-desktop) {
+           width:100%;
+           margin-left:0;
+           padding-left:14%;
+        }
+        @include media-query($on-palm) {
+           width:100%;
+           margin-left:0;
+           padding-left:0;
         }
 }
 
-.nav-wrapper{
-    //text-align: center;
-    //background-color:#FFFFFF;
-    //border-right: 1px solid #334;
-    //border-left: 1px solid #334;
-    border-bottom: 1px solid #334;
-}
-
-.navigation{
-    position:relative;
-    //text-align:center;
+.site-header-mini{
+    transition:border-bottom,  top;
+    width:44%;
+    margin-left:14%;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    position:fixed;
+    top:-64px;
+    border-bottom: 4px solid $black-color;
+    background-color:rgba(255,255,255,1);
+    &:hover{
+        top:0;
+    }
+    @include media-query($small-desktop) {
+           width:100%;
+           margin-left:0;
+           padding-left:14%;
+        }
+    @include media-query($on-palm) {
+            transition-duration: 300ms;
+            transition-timing-function: ease;
+            border-bottom: 4px solid $black-color;
+            margin-left:0;
+            width:100%;
+             top:-225px;
+             padding-left:0;
+        }
 }
 
 .site-title {
-    float:right;
-    padding-right:11.5%;
-    margin-top:0px;
-    padding-top:60px;
-    padding-left:88.5%;
-    transition-property: width, background-color, padding-top;
-    transition-duration: 350ms;
-    transition-timing-function: ease;
-    font-size: 18px;
-    //color:$brand-black;
-    font-weight: 800;
-    letter-spacing:6px;
-    font-family: "Surveyor SSm A", "Surveyor SSm B";
-    font-style: italic;
-    &,
+   font-family: $font-heading;
+   font-size: $font-body-size;
+   font-weight:700;
+   color:$black-color;
     &:visited {
-        //color: #FFFBFB;
+        //
     }
     &:hover {
-        //color: #0C090A;
-        //box-shadow: 1px 3px 5px #7f3231;
-
+        //
     }
-
     @include media-query($narrow) {
-            transition-property: width, background-color, padding-top, padding-left, padding-right;
-            padding-right:6%;
-            padding-top:30px;
-            transition-duration: 350ms;
-            transition-timing-function: ease;
-            width:100%;
-            text-align:right;
-            background-color:$brand-red;
-            color:$brand-off-white;
+            //
+        }
+         @include media-query($on-palm) {
+            padding-left:10%;
         }
 }
 
 .site-title a{
-    color:$brand-black;
+    //
 }
 
-.contact{
-    width:100%;
-    float:left;
-    margin-top:0;
-    line-height:18px;
-}
-
-.contact-link {
-    //font-family: 'Bembo Infant MT Std';
-    line-height: 18px;
-    font-size:12px;
-    color:#000;
-}
-
+/////navigation/////
 .site-nav {
-    width:100%;
-    float: right;
-    padding-top:30px;
-    font-size:12px;
-    font-weight: 600;
-    color:#ff4743;
-
+   margin-top:38px;
     @include media-query($narrow) {
-            transition-property: width, background-color,  padding-bottom;
-            padding-top:10px;
-            transition-duration: 350ms;
-            transition-timing-function: ease;
-            width:100%;
-            float:right;
-            background-color:rgba(254,254,254,0.9);
-            //border-bottom: 4px solid $brand-black;
-            padding-bottom:10px;
-            //box-shadow: 1px 2px 3px #7f3231;
-            border: 1px solid $grey-color-light;
+            //
         }
-
-    .menu-icon {
-        display: none;
-    }
-
     .page-link {
-        color: #ff4743;
-        font-size:11px;
-        font-family:"Operator SSm A", "Operator SSm B";
-        font-weight:200;
-        width:100%;
-        float:right;
-        text-align:right;
-        margin-right: 11.5%;
-        color:$brand-gray;
-
+        font-family:$font-heading;
+        font-size: 12px;
+        margin-left:20px;
+        color:$link-color;
+        transition:color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
          &:hover{
-            //font-weight:800;
-            transition:font-weight, font-size, border-bottom, color, margin, outline;
-            transition-timing-function: ease;
+            color:$black-color;
+            transition:color;
             transition-duration: 300ms;
-            color:$brand-red;
-
-        }
-
-        @include media-query($narrow) {
-            transition-property: width, background-color, padding-top, padding-left, padding-right;
-            float:left;
-            transition-duration: 350ms;
             transition-timing-function: ease;
-            font-size:10px;
-            text-align:left;
-            width:auto;
-            margin-right:0;
-            margin-left:5%;
-            &:hover{
-
-            }
         }
-
-
-
+        @include media-query($on-palm) {
+           width:100%;
+           float:left;
+           margin-left:0;
+           padding-left:10%;
+           border-bottom:1px solid $black-color;
+        }
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            //margin-left: 90px;
+            //
         }
-
         &:last-child{
-            float:right;
-            font-weight:500;
+            //
              @include media-query($narrow) {
-            transition-property: width, background-color, padding-top, padding-left, padding-right;
-            margin-right:6%;
+                //
+            }
         }
-        }
-
         @include media-query($on-laptop) {
             &:not(:first-child) {
-            //margin-left: 50px;
+                //
         }
     }
-
-    }
-
+ }
     @include media-query($on-palm) {
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        margin-left:2%;
+        //
     }
 }
 
-
-
-/**
- * Site footer
- */
+/////footer/////
 .site-footer {
-    //border-top: 1px solid #334;
-    //padding: $spacing-unit 0;
     width:100%;
     margin-top:25px;
     position:relative;
     float:right;
-    background-color:$brand-black;
     color:#ffffff;
     overflow:hidden;
     max-height:20px;
     margin-top: 216px;
+      
       @include media-query($on-laptop) {
        width:30%;
         float:left;
     }
+
      @include media-query($on-palm) {
        width:30%;
-      
     }
 }
 
@@ -223,16 +155,13 @@
 }
 
 .footer-col-wrapper {
-    
     font-size: 20px;
-    //color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    //margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
 }
 
@@ -282,296 +211,67 @@
     }
 }
 
-
-
-/**
- * Page content
- */
-
-.feature-wrapper{
-    //width:60%;
-    margin-top:40px;
-    float:left;
-    min-height:600px;
-    transition-property:margin-top;
-        transition-timing-function: ease;
-        transition-duration: 150ms;
-    @include media-query($narrow) {
-        transition-property:margin-top;
-        transition-timing-function: ease;
-        transition-duration: 150ms;
-        margin-top:80px;
-    }
-
-    @include media-query($on-palm) {
-        width:100%;
-        margin-top:30px;
-    }
-}
-
-.post-title-feature{
-    font-family: "Knockout 26 A", "Knockout 26 B";
-    font-weight:400;
-    font-size:122px;
-    line-height:0.8;
-    //margin-bottom:24px;
-    width:30%;
-    height:auto;
-    margin-right:9.5%;
-    letter-spacing: 8px;
-    color:$brand-black;
-    @include media-query($narrow) {
-        margin-right:0;
-        width:100%;
-        font-size:84px;
-        letter-spacing: 8px;
-    }
-}
-
-.welcome{
-    font-family:"Operator SSm A", "Operator SSm B";
-    width:55.9%;
-    float:right;
-    margin-top:0;
-    padding-top:0;
-    font-size:12px;
-    font-weight:300;
-    @include media-query($narrow) {
-        margin-top:40px;
-        margin-right:10%;
-        width:90%;
-    }
-
-     @include media-query($on-palm) {
-        margin-top:40px;
-        margin-right:0;
-        width:70%;
-        float:left;
-    }
-}
-
-.welcome a {
-    font-family:"Operator SSm A", "Operator SSm B";
-    font-size:12px;
-}
-
-.min-wrp{
-    width:100%;
-    margin-top:216px;
-    float:left;
-    @include media-query($on-laptop) {
-       margin-top:40px;
-       width:30%;
-       margin-right:10%;
-       padding:10px;
-    }
-     @include media-query($on-palm) {
-       margin-top:40px;
-       width:60%;
-    }
-}
-
-.min-wrp:first-child{
-    margin-top:10px;
-}
-
-.min-wrp-note{
-    width:100%;
-    margin-top:216px;
-    float:left;
-    @include media-query($on-laptop) {
-       margin-top:40px;
-       width:30%;
-       margin-right:10%;
-       padding:10px;
-    }
-     @include media-query($on-palm) {
-       margin-top:40px;
-       width:60%;
-    }
-}
-
-
-.min-wrp-sub{
-    width:100%;
-    margin-top:100px;
-    float:left;
-}
-
-.c-wrapper{
-    width:55.9%;
-    float:right;
-    @include media-query($on-laptop) {
-        margin-top:40px;
-        margin-right:0;
-        width:100%;
-        display:none;
-    }
-}
-
-.c-wrapper-sub{
-    width:100%;
-    float:right;
-    @include media-query($on-laptop) {
-        margin-right:0;
-        width:100%;
-        float:left;
-    }
-}
-
-.feature-text{
-    margin-top:10px;
-}
-
-.feature-text-note{
-    margin-top:10px;
-    margin-bottom:6px;
-}
-
-.post-title-min {
-    font-family: "Knockout 30 A", "Knockout 30 B";
-    font-weight: 400;
-    color:#ff4743;
-    margin:0;
-    font-size:36px;
-    line-height:1.3;
-    float:left;
-    width:34.4%;
-    @include media-query($on-laptop) {
-        margin-top:5px;
-        margin-right:0;
-        width:100%;
-        font-size:18px;
-        height:100%;
-    }
-}
-
-.post-title-min-note {
-    border-bottom:1px solid $brand-black;
-    font-family: "Surveyor SSm A", "Surveyor SSm B";
-    font-weight: 300;
-    color:$brand-gray;
-    margin:0;
-    margin-bottom:10px;
-    font-size:14px;
-    line-height:1.6;
-    letter-spacing:8px;
-    float:left;
-    width:100%;
-    @include media-query($on-laptop) {
-        margin-top:5px;
-        margin-right:0;
-        width:100%;
-        font-size:12px;
-        height:100%;
-    }
-}
-
-.post-title-min-note span {
-    border-bottom:5px solid $brand-black;
-     @include media-query($on-laptop) {
-        border-bottom:3px solid $brand-black;
-    }
-}
-
-.post-title-min-sub {
-    font-family: "Knockout 30 A", "Knockout 30 B";
-    font-weight: 400;
-    color:#ff4743;
-    margin:0;
-    font-size:24px;
-    line-height:1.3;
-    float:left;
-    width:100%;
-    
-}
-
-
-.post-categories-min{
-    font-family:"Knockout 30 A", "Knockout 30 B";
-    font-weight:400;
-    text-transform:capitalize;
-    display:none;
-    @include media-query($on-laptop) {
-        margin-top:10px;
-        color:$brand-black;
-        margin-right:0;
-        width:100%;
-        font-size:18px;
-        padding:0;
-        display:block;
-      }
-}
-
-.continue{
-    font-family: "Operator SSm A", "Operator SSm B";
-    font-size:10px;
-    font-weight:500;
-}
-
-.continue-note{
-    font-family: "Operator SSm A", "Operator SSm B";
-    font-size:10px;
-    font-weight:500;
-}
-
-.update-wrapper{
-    width:22%;
-    margin-left:13%;
-    float:right;
-    @include media-query($on-palm) {
-        width:100%;
-        margin-left: auto;
-        margin-bottom: 16px;
-    }
-}
-
-.update-title{
+////page-content/////
+.page-title{
+    font-family: $font-heading;
+    font-size:$font-body-size;
+    color:$black-color;
     font-weight:700;
-    line-height:0;
-    color:#7F3231;
-}
-
-.update{
-    color:#7F3231;
-}
-
-.recent-wrapper{
-    float:left;
-}
-
- .page-title {
-    font-family: "Surveyor SSm A", "Surveyor SSm B";
-    font-weight:800;
-    font-size:54px;
-    line-height:0;
-    margin-bottom:24px;
-    width:34.4%;
-    margin-right:9.5%;
- }
-
- .recent-page-title {
-    font-family: "Gotham SSm A", "Gotham SSm B";
-    font-weight: 800;
-    font-size:72px;
-    border-bottom: 20px solid #CCC9C9;
-    margin-top:60px;
-    line-height: 32px;
-    margin-bottom:29px;
-
-    @include media-query($on-palm) {
-        font-size: 18px;
-        padding:4px;
-        line-height:1.4;
-        border-bottom: 2px solid #CCC9C9;
+    @include media-query($narrow) {
+       //
     }
- }
+    @include media-query($on-palm) {
+       margin-top:150px;
+    }
+}
 
+.page-description{
+    width:100%;
+    float:left;
+    @include media-query($narrow) {
+        //
+    }
+
+     @include media-query($on-palm) {
+        //
+    }
+}
+
+.excerpt{
+    //
+}
+
+.post-title-list a{
+    font-size:$heading-size ;
+    line-height:$body-line-height;
+    transition: color ;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    float:left;
+    width:100%;
+    &:hover{
+        transition: color, border-bottom, border-radius;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        color:$black-color;
+        border-bottom: 3px solid $black-color;
+        border-radius: 4px;
+    }
+    @include media-query($on-laptop) {
+        //
+    }
+}
+
+.continue-link{
+    font-family:$font-link;
+    font-size:$small-font-size;
+    line-height:$small-line-height;
+    float:left;
+    width:100%;
+}
 
 .page-content {
-    //padding: $spacing-unit 0;
     margin-top:140px;
-    //position:relative;
 }
 
 .page-heading {
@@ -584,84 +284,38 @@
 .post-list{
     margin-left: 0;
     list-style: none;
-    width:55.9%;
+    width:50%;
     float:right;
     margin-top:0;
-    @include media-query($on-laptop) {
-        margin-top:5px;
-        margin-right:0;
-        width:100%;
-        font-size:18px;
-        float:left;
+    @include media-query($slim) {
+    width:100%;
+    float:left;
     }
     @include media-query($on-palm) {
-       margin-top:40px;
-       width:60%;
+       width:100%;
+       float:left;
     }
-
     > li {
         margin-bottom: $spacing-unit + 20;
     }
 }
 
-.post-meta {
-    font-family: "Knockout 30 A", "Knockout 30 B";
-    font-weight: 400;
-    color:$brand-gray;
-    margin:0;
-    font-size:18px;
-    line-height:1.3;
+.post-module{
+    margin-top:40px;
     float:left;
-    width:34.4%;
-    margin-top:4px;
-}
-
-.post-meta-note {
-    font-family: "Surveyor SSm A", "Surveyor SSm B";
-    font-weight: 300;
-    color:$brand-off-white;
-    margin:0;
-    font-size:10px;
-    line-height:1.3;
-    float:left;
-    text-align:right;
-    width:100%;
-    margin-top:4px;
-    background-color:$brand-black;
-    padding-right:10px;
 }
 
 .post-abstract {
-    font-family: "Operator SSm A", "Operator SSm B";
-    font-weight: 300;
-    color:$brand-black;
-    margin:0;
-    font-size:11px;
-    line-height:1.6;
-    float:left;
-    width:34.4%;
-    margin-top:10px;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    margin-bottom:0;
     @include media-query($on-laptop) {
-     
-        margin-right:0;
-        width:100%;
+     //
     }
 }
 
-.post-meta-sub{
-    font-family: "Operator SSm A", "Operator SSm B";
-    font-weight: 500;
-    color:$brand-gray;
-    margin:0;
-    font-size:10px;
-    line-height:1.3;
-    float:left;
-    width:34.4%;
-    margin-top:4px;
-}
-
 .post-link {
-    font-family: "Knockout 30 A", "Knockout 30 B";
+    font-family: "Knockout 30 A", "Knocko;ut 30 B";
     font-weight: 400;
     color:#ff4743;
     margin:0;
@@ -669,6 +323,23 @@
     line-height:1.3;
     float:left;
     width:34.4%;
+}
+
+.post-title-link {
+    font-size:$font-body-size;
+    margin-bottom:0;
+}
+
+.post-title-link a{
+    transition: color;
+     transition-duration: 300ms;
+     color:$link-color;
+    &:hover{
+        transition: color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        color:$black-color;
+    }
 }
 
 .post-categories{
@@ -684,141 +355,82 @@
     line-height:.5;
 }
 
-
 .page-link{
     font-size: 14px;
 }
 
-
-/**
- * Posts
- */
+/////posts/////
+.post{
+    margin-top:100px;
+    float:left;
+        @include media-query($on-palm){
+        margin-top:150px;
+    }
+}
 
 .post .post-meta{
-    width:100%;
-}
-
-.post .post-meta .post-author{
-    float: left;
-    margin-left:34%;
-    font-family: "Operator SSm A", "Operator SSm B";
-    font-size: 10px;
+    width:70%;
+    float:right;
+    font-family: $font-heading;
+    font-size: $small-font-size;
     font-weight:500;
-    color:$brand-black;
     line-height:27px;
-    @include media-query($on-laptop) {
-        margin-left:0;
+@include media-query($small-desktop) {
+        width:80%;
     }
-}
-
-.post-related{
-    float: right;
-    font-family: "Operator SSm A", "Operator SSm B";
-    font-size: 10px;
-    font-weight:500;
-    color:$brand-black;
     @include media-query($on-laptop) {
-        margin-right:10%;
+        width:100%;
+        float:left;
     }
     @include media-query($on-palm) {
-        float:left;
-        margin-left:0;
         width:100%;
+        float:left;
     }
-}
-
-.post-related ul{
-    list-style-type:none;
-    margin-left:0;
-}
-
-.post-related ul li {
-    margin-bottom:10px;
-}
-
-.post-related p{
-    font-style:italic;
-    font-weight:800;
 }
 
 .post-header {
-    margin-bottom: $spacing-unit;
+    //
 }
 
 .post-title {
-     font-size: 54px;
-    font-weight: 800;
-    line-height: 1.6;
-    color:$brand-black;
-    font-family: "Surveyor SSm A", "Surveyor SSm B", serif;
-    margin-top:200px;
-    font-style:italic;
-    //letter-spacing: 8px;
-    float:left;
-
+     font-family:$font-heading;
+     font-size:$heading-size;
+     color:$black-color;
     @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-title-note {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.6;
-    color:$brand-black;
-    font-family: "Surveyor SSm A", "Surveyor SSm B", serif;
-    margin-top:200px;
-    //font-style:italic;
-    letter-spacing: 8px;
-    float:left;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
+        //
     }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
-    margin-top:72px;
+    margin-top:40px;
     width:100%;
     float:left;
     @include media-query($on-laptop) {
-        margin-top:5px;
-        margin-right:0;
-        width:90%;
-        font-size:18px;
-        float:left;
+        //
     }
     @include media-query($on-palm) {
-       margin-top:40px;
-       width:90%;
+       //
     }
-
     h2 {
-        font-size: 32px;
-        font-family:"Knockout 30 A", "Knockout 30 B";
-        font-weight:400;
-        color:$brand-red;
-        width:66%;
-        float:right;
-
+       font-family:$font-heading;
+       font-size:$font-body-size;
+       font-weight:700;
+       margin-bottom:-$body-line-height;
+       float:left;
+       width:100%;
         @include media-query($on-laptop) {
-            font-size: 28px;
-            float:left;
+            //
         }
     }
-
     h3 {
         font-size: 26px;
-
         @include media-query($on-laptop) {
             font-size: 22px;
         }
     }
-
     h4 {
         font-size: 20px;
-
         @include media-query($on-laptop) {
             font-size: 18px;
         }
@@ -826,15 +438,17 @@
 }
 
 .post-content p{
-float:right;
-width:66%;
-margin-bottom: 23px;
-line-height:32px;
-@include media-query($on-laptop) {
-        margin-top:5px;
-        margin-right:0;
+    width:70%;
+    float:right;
+@include media-query($small-desktop) {
+        width:80%;
+    }
+    @include media-query($on-laptop) {
         width:100%;
-        font-size:18px;
+        float:left;
+    }
+    @include media-query($on-palm) {
+        width:100%;
         float:left;
     }
 }
@@ -844,177 +458,72 @@ line-height:32px;
     float:left;
     margin-bottom:23px;
     @include media-query($on-laptop) {
-        margin-top:5px;
-        margin-right:0;
-        width:100%;
-        font-size:18px;
-        float:left;
+        //
     }
     @include media-query($on-palm) {
-       margin-top:40px;
-       width:100%;
+       //
     }
 }
 
 .post-content blockquote p {
-
     float:left;
     margin-right:0;
-    font-size:10px;
+    font-size:$small-font-size;
     width:100%;
     padding:0;
-    font-weight: 300;
-    font-family:"Operator SSm A", "Operator SSm B";
-    color:$brand-black;
-    line-height:12px;
+    font-weight: 400;
+    font-family:$font-heading;
+    line-height:$small-line-height;
     margin-bottom:0;
-
     @include media-query($on-palm) {
         width:100%;
         float:left;
         margin-left:0;
         margin-bottom:10px;
     }
-
 }
 
 .post-content blockquote a:first-child{
-
     float:left;
     margin-right:0;
     font-size:10px;
     width:100%;
     padding:0;
     font-weight: 300;
-    font-family:"Operator SSm A", "Operator SSm B";
-    color:$brand-black;
     line-height:12px;
     margin-bottom:0;
-     border-bottom: 4px solid $brand-black;
-
+    border-bottom:1px solid $black-color;
 }
 
 .post-list p{
-
 width:100%;
 }
 
 .post-list blockquote {
-
-    float:right;
-    font-size:9px;
-    width:22%;
-    margin-left:13%;
-    text-align:left;
-    clear:both;
-    font-weight: bold;
-    overflow:hidden;
     display:none;
-
 }
 
 .post-list li {
-
-    //overflow:hidden;
+//
 }
 
 
-.hero{
-    color:$brand-black;
-    width:100%;
-    height:600px;
-    background-color:#fff;
-    //z-index:20;
-    float:left;
-    display:block;
-    position:relative;
-    box-shadow: 1px 1px 1px $brand-black;
-    transition-property: height, background-color;
-    transition:300ms;
-    transition-timing-function: ease;
-    &:hover{
-        &:after{
-            display:none;
-        }
-    transition-property: height, background-color;
-    transition:300ms;
-    transition-timing-function: ease;
-    }
-    overflow:hidden;
-     @include media-query($on-palm) {
-        height:700px;
-    }
-}
-
-.curtain{
-    background-color:rgba(255,255,255,0.8);
-    position:absolute;
-    width:100%;
-    height:600px;
-    //z-index: 30;
-}
-
-.hero-bg{
-    font-family: "Surveyor SSm A", "Surveyor SSm B";
-    font-size:10px;
-    z-index:21;
-    position:absolute;
-    float:left;
-}
-
-.hero-wrapper{
-    //z-index:30;
-    position:absolute;
-    margin-top:300px;
+/////hero section/////
+.post-title-hero{
+font-family:$font-heading;
+font-size:$heading-size;
+float:left;
+width:40%;
+color:#fff;
+font-weight:700;
 }
 
 .hero-description{
-        margin-top:5px;
-        margin-right:0;
-        width:30%;
-        font-size:12px;
-        float:right;
-        font-family:"Surveyor SSm A", "Surveyor SSm B";
-        font-weight:300;
-        margin-top:200px;
-        line-height:34px;
-        //border: 1px solid $brand-black;
-        padding:16px;
+    width:60%;
+    float:right;
 }
 
-.hero a{
-        margin-top:5px;
-        margin-right:0;
-        width:30%;
-        font-size:10px;
-        float:right;
-        font-family:"Operator SSm A", "Operator SSm B";
-        font-weight:300;
-        text-align:right;
-        margin-top:200px;
-}
-
-.hero-header{
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing:10px;
-    line-height: 1;
-    font-family: "Surveyor SSm A", "Surveyor SSm B", serif;
-    margin-top:400px;
-    float:left;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.hero img{
-    height:auto;
-    width:40%;
-    position:absolute;
-}
-
-.post-content a{
-    font-family:"Operator SSm A", "Operator SSm B";
-       font-size:12px;
+.continue-link-hero{
+    font-family: $font-link;
+    font-size:$font-body-size;
 }

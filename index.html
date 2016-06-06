@@ -2,36 +2,30 @@
 layout: default
 title: "home"
 ---
-
 <div class="home">
-  <!--<h1 class="page-heading">Posts</h1>-->
-<div class="feature-wrapper">
-<!--<h1 class="post-title-feature">Welcome</h1>
-<p class="welcome">This is the personal site of Scott Olsen. You'll find a collection of some of my written work on this site. I'm happy you stopped by and hope you get some enjoyment out of my essays or fictions. You can access the most recently posted content below. </p>-->
-{% for post in site.posts %}
-{%if post.categories contains 'note'%}
-<div class='min-wrp-note'>
-<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
-<h3 class="post-title-min-note"><span>{{ post.title }}</span></h3>
-<div class="c-wrapper-note">
-<p class="feature-text-note">{{ post.content }}</p>
-</div>
-<!--<span class="post-meta-note">{{ post.date | date: "%b %-d, %Y" }}</span>-->
-</div>
-{%else%}
-<div class='min-wrp'>
-<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
-<h3 class="post-title-min"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-<div class="c-wrapper">
-<p class="feature-text">{{ post.ex | truncatewords: 200 }}</p>
-<a class="continue" href="{{ post.url | prepend: site.baseurl }}">Continue Reading</a>
-</div>
-<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-<p class="post-abstract">{{post.abstract}}</p>
-</div>
-{%endif%}
-  {% endfor %}
-</div>
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-
+	<!--<div class="hero-wrapper">
+	{% for post in site.posts %}
+	{% if post.render contains 'project' %}
+		<h3 class="post-title-hero"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+		<p class="hero-description">{{ post.abstract }}</p>
+		<a class="continue-link-hero" href="{{ post.url | prepend: site.baseurl }}">Explore</a>
+	{%endif%}
+	{%endfor%}
+	</div>-->
+	<div class="wrapper">
+		<h1 class="page-title">Welcome</h1>
+  	<p class="page-description">I'd be happy to work with you on some of your own projects. If you think we'd work well together, or think I offer a skill set well suited to help fulfill your goals, let me know and I may be able to lend a hand depending on my current availibility. Please send me an <a href="mailto:scg.olsen@gmail.com?Subject=Let's%20Work%20Together.">email</a> at scg.olsen@gmail.com detailing your project and how I might contribute.</p>
+		<ul class="post-list">
+		{% for post in site.posts %}
+		{% if post.render contains 'normal'  %}
+		<div class="post-module">
+	                 <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+	                  <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+	                  <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
+	                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	              </div>
+		{%endif%}
+		{% endfor %}
+		</ul>
+	</div>
 </div>

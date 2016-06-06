@@ -2,29 +2,25 @@
 layout: default
 title: "olsen.works fiction"
 ---
-
 <div class="home">
-  <div class="feature-wrapper">
-  <h1 class="post-title-feature">Fiction</h1>
-  <p class="welcome">You'll find a collection of my fictional work here. The works are primarily short in length. I do not intend to publish any novel-length content on this site, but perhaps one day I will. For now, I'll hope you enjoy these shorter works.</p>
-  <ul class="post-list">
-    {% if site.categories.fiction == null %}
-    {%include 404.html %}
-    {% else %}
-    {% for post in site.posts %}
-      {% if post.categories contains 'fiction'%}
-      <div class='min-wrp-sub'>
-<h3 class="post-title-min-sub"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-
-<div class="c-wrapper-sub">
-<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
-<p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
-<a class="continue" href="{{ post.url | prepend: site.baseurl }}">Read</a>
-</div>
-<span class="post-meta-sub">{{ post.date | date: "%b %-d, %Y" }}</span>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endif %}
-</div>
+  <div class="wrapper">
+              <h1 class="page-title">Fiction</h1>
+              <p class="page-description">You'll find a collection of my fictional work here. The works are primarily short in length. I do not intend to publish any novel-length content on this site, but perhaps one day I will. For now, I'll hope you enjoy these shorter works.</p>
+              <ul class="post-list">
+              {% if site.categories.fiction == null %}
+              {%include 404.html %}
+              {% else %}
+              {% for post in site.posts %}
+              {% if post.categories contains 'fiction'%}
+              <div class="post-module">
+                 <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+                  <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            </ul>
+      </div>
 </div>

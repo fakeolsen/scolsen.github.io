@@ -3,6 +3,7 @@ layout: post
 title: "Kenya Hara's White"
 date: 2016-05-26 12:00:00
 categories: note 
+render: normal
 abstract: A note on Kenya Hara's book White
 ex: "..."
 ---

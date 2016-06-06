@@ -2,49 +2,17 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-{%if page.categories contains 'note'%}
-	<h1 class="post-title-note">{{ page.title }} </h1>
-    <!--<h4 class="post-categories">{{ page.categories | join: ', ' }}.</h4>-->
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-<span class="post-meta">
-	<div class="post-author">
-	<p>A note by Scott Olsen <br> Published on: {{ page.date | date: "%b %-d, %Y" }}</p>
-</div>
-</span>
-{%else%}
-    <h1 class="post-title">{{ page.title }} </h1>
-    <!--<h4 class="post-categories">{{ page.categories | join: ', ' }}.</h4>-->
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-<span class="post-meta">
-	<div class="post-author">
-	<p>A piece by Scott Olsen <br> Published on: {{ page.date | date: "%b %-d, %Y" }}</p>
-</div>
-	<div class="post-related">
-
-	<p>Related Content</p>
-	<ul>
-	{%if page.related %}
-	{% for post in site.posts %}
-	{% if page.related contains post.title %}
-	<li>
-		<a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	</li>
-	{% endif %}
-	{%endfor%}
-	{% else %}
-	<li>This post is totally unique for now.</li>
-	{% endif %}
-</ul>
-</div>
-</span>
-{%endif%}
+	<div class="wrapper">
+		<header class="post-header">
+			<h1 class="post-title">{{ page.title }}</h1>
+		</header>
+		<article class="post-content">
+			{{ content }}
+		</article>
+		<span class="post-meta">
+			<div class="post-author">
+				<p>A piece by Scott Olsen <br> Published on: {{ page.date | date: "%b %-d, %Y" }}</p>
+			</div>
+		</span>
+	</div>
 </div>

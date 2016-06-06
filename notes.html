@@ -2,29 +2,25 @@
 layout: default
 title: "olsen.works notes"
 ---
-
 <div class="home">
-  <div class="feature-wrapper">
-  <h1 class="post-title-feature">Notes</h1>
-  <p class="welcome">This page contains notes. Notes are shorter, often casual, thoughts or observations on a particular topic or text. They may be a good source of momentary reflection. I hope they generate interest and support your own thinking and examinations. Let me know.</p>
-  <ul class="post-list">
-    {% if site.categories.note == null %}
-    {%include 404.html %}
-    {% else %}
-    {% for post in site.posts %}
-      {% if post.categories contains 'note'%}
-      <div class='min-wrp-sub'>
-<h3 class="post-title-min-sub"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-
-<div class="c-wrapper-sub">
-<!--<h4 class="post-categories-min">{{ post.categories | join: ', ' }}.</h4>-->
-<p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
-<a class="continue" href="{{ post.url | prepend: site.baseurl }}">Read</a>
-</div>
-<span class="post-meta-sub">{{ post.date | date: "%b %-d, %Y" }}</span>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endif %}
-</div>
+        <div class="wrapper">
+              <h1 class="page-title">Notes</h1>
+              <p class="page-description">This page contains notes. Notes are shorter, often casual, thoughts or observations on a particular topic or text. They may be a good source of momentary reflection. I hope they generate interest and support your own thinking and examinations. Let me know.</p>
+                      {% if site.categories.note == null %}
+                      {%include 404.html %}
+                      {% else %}
+                      <ul class="post-list">
+                      {% for post in site.posts %}
+                      {% if post.categories contains 'note'%}
+                      <div class="post-module">
+                            <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                            <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+                            <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
+                            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                      </div>
+                      {% endif %}
+                      {% endfor %}
+                      </ul>
+                      {% endif %}
+      </div>
 </div>

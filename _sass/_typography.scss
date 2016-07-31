@@ -11,6 +11,11 @@ a {
   font-size: $font-body-size;
 }
 
+blockquote p {
+  font-size: $small-font-size;
+  font-family: $font-link;
+}
+
 ////headings////
 
 h1 {
@@ -20,11 +25,18 @@ h1 {
   font-weight:300;
 }
 
+h2 {
+  font-family: $font-link;
+  font-size: $font-body-size;
+  color: $grey-color;
+}
+
 h4 {
   font-family: $font-link;
   letter-spacing: 0.4em;
   color: $grey-color;
   font-size: 14px;
+  font-weight: 500;
 }
 
 ////class-specific////
@@ -40,6 +52,7 @@ h4 {
 .current-page-indicator {
   font-weight: 500;
   font-family: $font-link;
+  font-size: $small-font-size;
 }
 
 .info-content {
@@ -50,4 +63,10 @@ h4 {
 
 .post-content p {
   margin-bottom: 14px;
+}
+
+.mobile-menu-button {
+  font-family: $font-link;
+  font-size:$font-body-size;
+  text-decoration: underline;
 }

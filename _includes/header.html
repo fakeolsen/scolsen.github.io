@@ -1,17 +1,20 @@
 <header id="site-header" class="site-header">
     <a class="site-title" href="{{ site.baseurl }}/">olsen.works</a>
-    <nav class="site-nav">
-      <div class="trigger">
-        <p class="current-page-indicator">Currently Viewing: {{ page.title }}</p>
-        {% for item in site.pages %}
-          {% if page.url != item.url and item.title != "About" and item.title != "Work With Me" and item.title != "css" and item.title != "feed" %}
-        <a class="page-link" href="{{ item.url | prepend: site.baseurl }}"> {{ item.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-    <aside class="page-info">
-        <h4 class="info-heading">Info</h4>
-        <p class="info-content">{{ page.info }}</p>
-    </aside>
+    <p class="current-page-indicator">Currently Viewing: {{ page.title }}</p>
+    <div class="nav-info-container">
+        <nav class="site-nav">
+            {% for item in site.pages %}
+              {% if page.url != item.url and item.title != "About" and item.title != "Work With Me" and item.title != "css" and item.title != "feed" %}
+            <a class="page-link" href="{{ item.url | prepend: site.baseurl }}"> {{ item.title }}</a>
+              {% endif %}
+            {% endfor %}
+        </nav>
+        <aside class="page-info">
+            <button class="mobile-menu-button">Menu</button>
+            <section class="info">
+                <h4 class="info-heading">Info</h4>
+                <p class="info-content">{{ page.info }}</p>
+            </section>
+        </aside>
+   </div>
 </header>

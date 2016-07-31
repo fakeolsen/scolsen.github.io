@@ -2,10 +2,10 @@
 layout: page
 title: Notes
 permalink: /notes/
+info: This page contains notes. Notes are shorter, often casual, thoughts or observations on a particular topic or text. They may be a good source of momentary reflection. I hope they generate interest and support your own thinking and examinations. Let me know.
 ---
 <div class="home">
         <div class="wrapper">
-              <p class="page-description">This page contains notes. Notes are shorter, often casual, thoughts or observations on a particular topic or text. They may be a good source of momentary reflection. I hope they generate interest and support your own thinking and examinations. Let me know.</p>
                       {% if site.categories.note == null %}
                       {%include 404.html %}
                       {% else %}
@@ -14,9 +14,8 @@ permalink: /notes/
                       {% if post.categories contains 'note'%}
                       <div class="post-module">
                             <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                            <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+                            <p class="post-excerpt">{{ post.excerpt | truncatewords: 100 }}</p>
                             <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
-                            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
                       </div>
                       {% endif %}
                       {% endfor %}

@@ -3,10 +3,10 @@ layout: page
 title: Essays
 date:   2016-03-01 17:15:50
 permalink: /essays/
+info: You'll find a collection of essays I've written here. Most are likely on the subjects of writing or philosophy, though I may occasionally veer off of those courses. I hope you enjoy.
 ---
 <div class="home">
     <div class="wrapper">
-        <p class="page-description">You'll find a collection of essays I've written here. Most are likely on the subjects of writing or philosophy, though I may ocassionally veer off of those courses. I hope you enjoy.</p>
         <ul class="post-list">
               {% if site.categories.essay == null %}
               {%include 404.html %}
@@ -15,9 +15,8 @@ permalink: /essays/
               {% if post.categories contains 'essay'%}
               <div class="post-module">
                  <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                  <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+                  <p class="post-excerpt">{{ post.excerpt | truncatewords: 100 }}</p>
                   <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
-                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               </div>
               {% endif %}
               {% endfor %}

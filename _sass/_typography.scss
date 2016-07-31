@@ -70,3 +70,8 @@ h4 {
   font-size:$font-body-size;
   text-decoration: underline;
 }
+
+.post-author p{
+  font-family: $font-link;
+  font-size: $small-font-size;
+}

@@ -1,6 +1,8 @@
 <header id="site-header" class="site-header">
-    <a class="site-title" href="{{ site.baseurl }}/">olsen.works</a>
-    <p class="current-page-indicator">Currently Viewing: {{ page.title }}</p>
+    <div class="site-info">
+        <a class="site-title" href="{{ site.baseurl }}/">olsen.works</a>
+        <p class="current-page-indicator">Currently Viewing: {{ page.title }}</p>
+    </div>
     <div class="nav-info-container">
         <nav class="site-nav">
             {% for item in site.pages %}

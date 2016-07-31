@@ -1,3 +1,30 @@
+////Coffee////
+svg {
+  margin-left: 11%;
+  @media screen and (min-width:1024px) and (max-width: 1440px) {
+    margin-left: 8%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-left: 5%;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 5%;
+  }
+}
+
+.site-footer {
+  opacity: 0;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  display: flex;
+}
+
+.site-footer a {
+  margin-top: 10px;
+  margin-left: 1%;
+}
+
 /////content-area/////
 
 .content-area {
@@ -5,7 +32,23 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: baseline;
+  opacity: 0;
 }
+
+/////overlay/////
+
+//.overlay {
+//  width: 100%;
+//  height: 100%;
+//  position: fixed;
+//  background-color:$link-color;
+//  color: #fff;
+//  z-index: 20;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  flex-wrap: wrap;
+//}
 
 /////site-header/////
 
@@ -23,13 +66,29 @@
   @media screen and (max-width: 767px) {
     width: 100%;
     margin: 0;
-    top: 0;
+    top: 10px;
   }
 }
 
 .site-title {
   font-family: $font-link;
   margin-bottom: $spacing-unit;
+  @media screen and (max-width: 767px) {
+    margin-left: 10%;
+  }
+}
+
+.current-page-indicator {
+  @media screen and (max-width: 767px) {
+    margin-left: 10%;
+  }
+}
+
+.site-info {
+  border-bottom: 1px solid $black-color;
+  @media screen and (max-width: 767px) {
+    border-bottom: 1px solid $black-color;
+  }
 }
 
 .nav-info-container {
@@ -78,16 +137,19 @@
     display:none;
     margin-top: 0;
     flex-wrap: wrap;
-    width:100%;
+    width:0;
     justify-content: center;
     align-items: center;
     background-color: rgba(250,250,250, 1);
     border-right: $grey-color 4px solid;
+    height:0;
   }
 }
 
 .site-nav-show {
   display: flex;
+  width:100%;
+  height:auto;
 }
 
 .site-nav a {
@@ -109,12 +171,14 @@
     background-color: $black-color;
     display: flex;
     justify-content: center;
+    height:auto;
   }
 }
 
 .page-info-alt {
   padding: 0;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .info {
@@ -178,6 +242,11 @@
 
 .post-excerpt {
   margin-top: $spacing-unit / 10;
+}
+
+.post-author {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
 }
 
 //notes styleing//

@@ -1,0 +1,151 @@
+/*Animations and Transitions*/
+
+//--Keyframes--//
+
+@keyframes overlayFade {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display:none;
+    z-index: -20;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes contentRender {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    position:relative;
+    top:-1000px;
+  }
+  100% {
+    top:0;
+  }
+}
+
+@keyframes colorToLink {
+  0% {
+    color:$grey-color;
+  }
+  100% {
+    color:$link-color;
+  }
+}
+
+@keyframes smokeMid {
+  0% {
+    opacity: 0;
+    transform: translateY(0px); }
+  100% {
+    opacity: 1;
+    transform: translateY(-6px); } }
+@keyframes smokeLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(0px); }
+  100% {
+    opacity: 1;
+    transform: translateY(-8px); } }
+@keyframes smokeRight {
+  0% {
+    opacity: 0;
+    transform: translateY(0px); }
+  100% {
+    opacity: 1;
+    transform: translateY(-4px); } }
+
+
+////Overlay////
+
+.overlay {
+  animation: overlayFade;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+////Content////
+
+.content-area {
+  animation: contentRender;
+  animation-delay: 0.2s;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+  //animation-timing-function: cubic-bezier(.27,.6,.77,.23);
+}
+
+.site-title {
+  animation: colorToLink;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(1,.01,.38,.81);
+}
+
+////Mobile Menu////
+.page-info-alt {
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+.site-nav-show {
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-delay: 0.3s;
+}
+
+.nav-info-container {
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+
+////Coffee////
+#smoke-mid {
+  animation: smokeMid 2s ease-in infinite, colorVariance 0.8s 1.4s ease-in infinite; }
+
+#smoke-left {
+  animation: smokeLeft 2.3s ease-in infinite, colorVariance 0.8s 1s ease-in infinite; }
+
+#smoke-right {
+  animation: smokeRight 1.6s ease-in infinite, colorVariance 0.8s 2.3s ease-in infinite; }
+
+.site-footer {
+  animation: contentRender;
+  animation-delay: 0.2s;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}

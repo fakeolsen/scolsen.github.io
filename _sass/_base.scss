@@ -20,6 +20,12 @@ dl, dd, ol, ul, figure {
 
 /////links/////
 
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-family: $font-link;
+}
+
 /////blockquotes/////
 
 /////code formatting/////

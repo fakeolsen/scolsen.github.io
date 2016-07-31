@@ -1,0 +1,53 @@
+
+p {
+  font-family: $font-body;
+  font-size: $font-body-size;
+  line-height: $body-line-height;
+  font-weight: 300;
+}
+
+a {
+  font-family: $font-link;
+  font-size: $font-body-size;
+}
+
+////headings////
+
+h1 {
+  font-family: $font-display;
+  font-size: $font-display-size;
+  line-height: $font-display-line-height;
+  font-weight:300;
+}
+
+h4 {
+  font-family: $font-link;
+  letter-spacing: 0.4em;
+  color: $grey-color;
+  font-size: 14px;
+}
+
+////class-specific////
+
+.site-header {
+  font-size: 16px;
+}
+
+.site-title {
+  font-weight: 500;
+}
+
+.current-page-indicator {
+  font-weight: 500;
+  font-family: $font-link;
+}
+
+.info-content {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  font-weight: 500;
+}
+
+.post-content p {
+  margin-bottom: 14px;
+}

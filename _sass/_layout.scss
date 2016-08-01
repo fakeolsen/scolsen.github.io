@@ -205,6 +205,12 @@ svg {
 
 /////footer/////
 
+.site-footer {
+  @media screen and (max-width: 767px){
+    display:none;
+  }
+}
+
 ////page-content/////
 
 .page-content {
@@ -230,6 +236,11 @@ svg {
   margin-bottom: 24px;
 }
 
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 //post-list//
 
 .post-module {
@@ -249,7 +260,7 @@ svg {
   margin-bottom: $spacing-unit / 2;
 }
 
-//notes styleing//
+//notes styling//
 
 .post-container blockquote p {
   @media screen and (min-width: 1250px) {
@@ -257,6 +268,30 @@ svg {
     width: 350px;
     margin-left: 37%;
   }
+}
+
+//images//
+figure {
+  max-width: 100%;
+  margin-bottom: $spacing-unit / 2;
+  @media screen and (min-width: 1250px) {
+    position: absolute;
+    max-width: 100%;
+    max-height: 350px;
+    margin-left: 37%;
+  }
+}
+
+img {
+  max-width: 100%;
+  @media screen and (min-width: 1250px) {
+    width: 350px;
+  }
+}
+
+figcaption {
+  border-top: 1px solid $black-color;
+  margin-top: 2px;
 }
 
 /////hero section/////

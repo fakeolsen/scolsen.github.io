@@ -14,7 +14,7 @@ info: This page contains notes. Notes are shorter, often casual, thoughts or obs
                       {% if post.categories contains 'note'%}
                       <div class="post-module">
                             <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                            <p class="post-excerpt">{{ post.excerpt | truncatewords: 100 }}</p>
+                            <p class="post-excerpt">{{ post.ex | truncatewords: 100 }}</p>
                             <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
                       </div>
                       {% endif %}

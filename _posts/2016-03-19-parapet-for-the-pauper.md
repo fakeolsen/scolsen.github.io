@@ -4,7 +4,7 @@ title: "Parapet for the Pauper"
 date: 2016-03-19 12:00:00
 categories: writing
 render: normal
-abstract:  This is a piece I wrote in December 2011 which was published in Drexel’s Maya Magazine.
+info: This is a piece I wrote in December 2011 which was published in Drexel’s Maya Magazine.
 ex: "I’ve traveled this rift, the one all folk know so well. The furrow dug out by the hackneyed adjudicator, who, just as he is departing, turns and strikes once more: on the street, from the office, from behind the dastards well worn cloak of text, the list goes on. His message is but the maw of a fiend set to tear through the strands of one’s being. He sits atop a throne of fallacious tokens, judging with a swift hand and the lexicon of scorn. None escape the broad reach of the common self-commissioned connoisseur. The sound of his mandate is that of a tiny hairpin slipping into the locks of the self, and unlocking discontent..."
 ---
 > **Note:** This is a piece I wrote in December 2011 which was published in Drexel’s [Maya Magazine][1] in 2012. Personally, I find it painful to read. The style is laborious and overwrought. Still, I stand by its message. 

@@ -4,8 +4,7 @@ title: "Three Conditions for a Definition of Science"
 date: 2016-03-19 12:00:00
 categories: writing philosophy essay feature
 render: normal
-related: Parapet for the Pauper Form and Counterform
-abstract: This piece explores three potential conditions for a definition of science.
+info: This piece explores three potential conditions for a definition of science.
 ex: "Determining what science actually is reigns the foremost problem philosophy of science ought to try to answer. Some approaches are more successful than others, and some more readily fit the descriptive pictures of science we intuitively construct. Perhaps, however, a philosophy of science ought to offer not only a descriptive, but a normative answer to the question “what is science,” suggesting not only what science currently is, but what it ought to be. Normative definitions of science consider science in its own right, regardless of current practice, and hold science to a particular standard. Definitions which are descriptive in nature consider the daily practices we label scientific and the communities responsible for them. Let us consider some of the answers philosophers have provided to the question, and see if we can forge a balanced definition of science, which provides both a descriptive and normative account..."
 ---
 > **Note:** I wrote this essay in the spring of 2015 and presented it at the 2016 Annual Greater Philadelphia Consortium Philosophy Undergraduate Conference. I'm hoping to make improvements to the piece in the future. Currently I'm still working out the best means of presenting bibliographic information as well as inline notes via jekyll, so for now the notes to the piece are left out and the minuscule works cited is present at the end. 

@@ -10,7 +10,7 @@ info: This is the personal site of Scott Olsen. You'll find a collection of some
 		{% if post.render contains 'normal'  %}
 		<div class="post-module">
 	                 <p class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-	                  <p class="post-ex">{{ post.excerpt | truncatewords: 100 }}</p>
+	                  <p class="post-ex">{{ post.ex | truncatewords: 100 }}</p>
 	                  <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
 	              </div>
 		{%endif%}

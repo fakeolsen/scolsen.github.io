@@ -1,7 +1,7 @@
 ////Coffee////
 svg {
   margin-left: 11%;
-  @media screen and (min-width:1024px) and (max-width: 1440px) {
+  @media screen and (min-width:1220px) and (max-width: 1440px) {
     margin-left: 8%;
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -57,7 +57,7 @@ svg {
   width: 260px;
   margin-left: 11%;
   position: absolute;
-  @media screen and (min-width:1024px) and (max-width: 1440px) {
+  @media screen and (min-width:1220px) and (max-width: 1440px) {
     margin-left: 8%;
   }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -94,7 +94,9 @@ svg {
 .nav-info-container {
   position:fixed;
   width:260px;
+  opacity: 0.2;
   @media screen and (max-width: 767px){
+    opacity: 1;
     position: fixed;
     bottom: 0;
     color: #FFFFFF;
@@ -102,6 +104,9 @@ svg {
     background-color: $black-color;
     display: flex;
     justify-content: center;
+  }
+  &:hover {
+    opacity:1;
   }
 }
 
@@ -206,6 +211,10 @@ svg {
 /////footer/////
 
 .site-footer {
+  opacity: 0.2;
+  &:hover {
+    opacity: 1;
+  }
   @media screen and (max-width: 767px){
     display:none;
   }
@@ -217,7 +226,7 @@ svg {
   width: 400px;
   margin-left: 34%;
   margin-top: 140px;
-  @media screen and (min-width: 768px)  and (max-width: 1023px) {
+  @media screen and (min-width: 768px)  and (max-width: 1219px) {
     margin-left: 44%;
   }
   @media screen and (max-width: 767px) {

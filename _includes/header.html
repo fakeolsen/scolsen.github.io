@@ -2,7 +2,9 @@
     <div class="site-info">
         <a class="site-title" href="{{ site.baseurl }}/">olsen.works</a>
         <p class="current-page-indicator">Currently Viewing: {{ page.title }}</p>
+        <!--<p class="info-content">{{ page.info }}</p>-->
     </div>
+    {% if page.title != "Home" %}
     <div class="nav-info-container">
         <nav class="site-nav">
             {% for item in site.pages %}
@@ -11,12 +13,6 @@
               {% endif %}
             {% endfor %}
         </nav>
-        <aside class="page-info">
-            <button class="mobile-menu-button">Menu</button>
-            <section class="info">
-                <h4 class="info-heading">Info</h4>
-                <p class="info-content">{{ page.info }}</p>
-            </section>
-        </aside>
    </div>
+    {% endif %}
 </header>

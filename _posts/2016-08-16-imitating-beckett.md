@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Imitating Beckett"
+date: 2016-08-16 12:00:00
+
+
+info: Some thoughts on writing in the style of Beckett. 
+ex: "I sat down to do a bit of writing this morning. My goal: continue chugging along on collection of short fictional works I, just yesterday, decided to begin. I gave up about one hundred words into my current piece. Luckily, I have a diagnosis..."
+---
+I sat down to do a bit of writing this morning. My goal: continue chugging along on collection of short fictional works I, just yesterday, decided to begin. I gave up about one hundred words into my current piece. Luckily, I have a diagnosis:
+
+I am trying to write too much like Beckett. I'm still reeling from finishing an edition of his shorter prose works, primarily comprised of unfinished fragments of novels and self-contained short stories. Beckett's style is undoubtedly singular. Minimalist, abstract, and heady are all fair attributions. I was most impressed by his *The Lost Ones* and *Ping*. 
+
+I'll admit a small conceit here as well: Beckett's minimalist prose resonates with me. I sensed in his style, whether justifiably or not, the realization of a sort of aesthetic I myself was bumbling with in a short piece titled "On the Linoleum." That Beckett should attempt a similar aesthetic, and furthermore achieve it, at least gives me the small comfort in knowing there are others who share my aesthetic considerations (in spite of the fact that positive news is coupled with the negative realization that my own efforts are not even a shadow of Beckett's superior execution of the style). Therein reading Beckett's prose work was instructive and beneficial. It was also, as it turns out, hampering. 
+
+See, the problem this morning is that I began writing in a state which was too consciously Beckettean in nature. I began not with a fictional situation, not with characters, scenery, or, the best way to begin likely, dialogue, but rather with an abstraction. Beginning from pure abstraction does not make for a very good story. It may be the correct place to begin for a philosophical treatise or meditation, but, even Beckett's minimalist prose functions in so far as it provides the minimum *concrete* details we require to engross ourselves.  For instance, I mentioned *The Lost Ones*. There is a great deal of abstract thematic or philosophical content you might derive from that piece, it can be read as an allegory, it may be a meditation on futility, on the bleak essence of the human condition. But that isn't what makes it memorable. Rather what affixes itself in the reader's mind (or at least mine) is the strange imagery, the cylindrical trap the searchers are in, the abundance of ladders, alcoves, tunnels, etc. in short, all of the details which codify the abstracted point. It lacks traditional characters as such, as well as dialogue, but brings two components which enable it to function as a story rather than mere thought experiment: i. the clarity and sharpness of image ii. some form of progression or change enacted upon the image, not anything we'd comfortably call a *plot* in the traditional sense--but movement--pondering of change of condition is there.
+
+My problem this morning was trying to be too much Beckett and not enough Olsen. I was beginning from nothing--that is standard; free writing is often how I begin--but I was, in leaving Beckett's blueprints in the forefront of my mind, sticking to too much nothing--trying to apply a style without having any of the content to apply it too. 
+
+I should mention too, that I have not written fiction, or even much of anything, in a long while, far too long--that is a more than plausible reason for the bad work I pumped out this morning. That same reason is likely the culprit behind the quality of this little reflection, which I'm sure upon my reading it for editing will appear subpar. One rusts and must oil again. 

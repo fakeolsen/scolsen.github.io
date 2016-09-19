@@ -4,15 +4,28 @@ title: Home
 info: This is the personal site of Scott Olsen. You'll find a collection of some of my written work on this site. I'm happy you stopped by and hope you get some enjoyment out of my essays or fictions. You can access the most recently posted content below.
 ---
 <div class="home">
+	<div class="nav-info-container-home">
+		<nav class="site-nav-alt">
+			{% for item in site.pages %}
+			{% if page.url != item.url and item.title != "About" and item.title != "Work With Me" and item.title != "css" and item.title != "feed" %}
+			<a class="page-link" href="{{ item.url | prepend: site.baseurl }}"> {{ item.title }}</a>
+			{% endif %}
+			{% endfor %}
+		</nav>
+		<aside class="page-info">
+			<section class="info">
+				<h4 class="info-heading">Info</h4>
+				<p class="info-content">{{ page.info }}</p>
+			</section>
+		</aside>
+	</div>
 	<div class="wrapper">
 		<ul class="post-list">
 		{% for post in site.posts %}
 		{% if post.render contains 'normal'  %}
-		<div class="post-module">
-	                 <p class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-	                  <p class="post-ex">{{ post.ex | truncatewords: 100 }}</p>
-	                  <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
-	              </div>
+		<div class="info">
+	                 <p><a class="info-content-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+		</div>
 		{%endif%}
 		{% endfor %}
 		</ul>

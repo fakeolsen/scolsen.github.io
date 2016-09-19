@@ -6,6 +6,7 @@ p {
   font-weight: 300;
 }
 
+
 a {
   font-family: $font-link;
   font-size: $font-body-size;
@@ -25,9 +26,12 @@ figcaption {
 
 h1 {
   font-family: $font-display;
-  font-size: $font-display-size;
-  line-height: $font-display-line-height;
-  font-weight:300;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight:800;
+  //font-style:italic;
+  //text-align: center;
+  //letter-spacing: 0.1em;
 }
 
 h2 {
@@ -83,4 +87,20 @@ h4 {
 
 .site-footer a {
   font-size: $small-font-size;
+}
+
+.page-title {
+  font-size: 18px;
+  font-family:$font-display;
+  border-bottom: 1px solid $black-color;
+  font-weight:300;
+  opacity: 0.6;
+  margin-bottom: $spacing-unit;
+}
+
+.info-content-link {
+  font-size: $small-font-size;
+  line-height: $small-line-height + 14px;
+  font-weight: 500;
+  font-family: $font-body;
 }

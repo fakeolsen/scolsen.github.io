@@ -28,8 +28,8 @@ h1 {
   font-family: $font-display;
   font-size: 24px;
   line-height: 30px;
-  font-weight:800;
-  //font-style:italic;
+  font-weight:300;
+  font-style:italic;
   //text-align: center;
   //letter-spacing: 0.1em;
 }
@@ -74,6 +74,7 @@ h4 {
   font-size: $small-font-size;
   line-height: $small-line-height;
   font-weight: 500;
+  display:none;
 }
 
 .post-content p {

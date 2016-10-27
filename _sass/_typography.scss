@@ -26,11 +26,10 @@ figcaption {
 
 h1 {
   font-family: $font-display;
-  font-size: 24px;
+  font-size: 36px;
   line-height: 40px;
   font-weight:300;
-  font-style: italic;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit + 20px;
   //text-align: center;
   //letter-spacing: 0.1em;
 }

@@ -22,6 +22,17 @@ info: This is the personal site of Scott Olsen. I maintain a portion of my writt
 	<div class="wrapper">
 		<ul class="post-list">
 		{% for post in site.posts %}
+
+		{% if post.render contains 'feature'%}
+			<h2 class="page-title">Latest</h2>
+			<p class="post-title-link-p"><a class="post-title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+		{%endif%}
+		{% endfor %}
+
+		<h2 class="page-title">Others</h2>
+
+		{% for post in site.posts %}
+
 		{% if post.render contains 'normal'  %}
 		<div class="info">
 	                 <p><a class="info-content-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>

@@ -13,8 +13,10 @@ a {
 }
 
 blockquote p {
-  font-size: $small-font-size;
-  font-family: $font-link;
+  font-size: $font-body-size + 6px;
+  font-family: $font-display;
+  line-height: $font-body-size + 18px;
+  color: $link-color;
 }
 
 figcaption {
@@ -30,7 +32,7 @@ h1 {
   line-height: 40px;
   font-weight:300;
   margin-bottom: $spacing-unit + 20px;
-  //text-align: center;
+  text-align: center;
   //letter-spacing: 0.1em;
 }
 
@@ -112,4 +114,32 @@ h4 {
   line-height: $small-line-height + 14px;
   font-weight: 500;
   font-family: $font-body;
+}
+
+.post-title-link {
+  font-family:$font-display;
+  font-size: 64px;
+  line-height: 68px;
+}
+
+.critique-prelude {
+  font-size:24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B"; 
+}
+
+.critique-work {
+  text-align: center;
+  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B"; 
+}
+
+.quotation {
+  color:$link-color;
+}
+
+.datum {
+  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B"; 
+  font-style: italic;
 }

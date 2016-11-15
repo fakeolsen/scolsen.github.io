@@ -4,6 +4,7 @@ title: "The KT88: NYRB Critique 16-17 Series I.i"
 date: 2016-11-14 12:00:00
 categories: writing essay criticism
 render: feature
+ex: "Mr. Cui is a Kt88 amplifier. His problems overlap with those of the KT88 he's in the process of installing at the opening of Ge Fei's wonderful Invisibility Cloak: "I worked day and night for two weeks to produce an amplifier that would fit the system, though whether or not it would produce a good sound was by no means certain." (3) Cui is in a constant state of working out how he fits within the context of a social system, and furthermore, to what extent his role in this system is legitimate, "Whether or not it would produce a good sound." Ge Fei's text is a metaphoric exploration of the amplifier, of the ways in which modern individuals are constrained by, and fit into, a system, and how the strictures of this system manifest themselves in one man's struggles of integration with modern Chinese society. Cui's delicately rendered mesh of opinions and recollections exhume a central problem underlying the societal pressures the novel presents: the problem of legitimacy."
 ---
 
 <h2 class="critique-prelude"> Criticum: </h2>

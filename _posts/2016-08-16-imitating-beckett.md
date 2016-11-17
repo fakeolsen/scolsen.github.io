@@ -3,7 +3,7 @@ layout: post
 title: "Imitating Beckett"
 date: 2016-08-16 12:00:00
 
-
+place: Philadelphia
 info: Some thoughts on writing in the style of Beckett. 
 ex: "I sat down to do a bit of writing this morning. My goal: continue chugging along on collection of short fictional works I, just yesterday, decided to begin. I gave up about one hundred words into my current piece. Luckily, I have a diagnosis..."
 ---

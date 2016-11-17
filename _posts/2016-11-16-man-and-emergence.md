@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Man and Emergence"
+date: 2016-11-16 12:00:00
+categories: note 
+render: normal
+place: Philadelphia
+info: A note on emergent categories
+ex: "Economists are rare, yet the economy is universal. All persons are familiar with the broader category of finance to some extent, all can claim to feel its effects, and many level complaints against it. But how does an individual reconcile his localized, subjective experience with this notion of economy?"
+---
+
+Economists are rare, yet the *economy* is universal. All persons are familiar with the broader category of finance to some extent, all can claim to feel its effects, and many level complaints against it. But how does an individual reconcile his *localized*,  *subjective* experience with this notion of *economy*?
+
+We can pose the question for any of the vast fields of inquiry which arise in discussion today: what does the individual truly know of the effects of politics, climate, or even biology?  Each of these domains is *emergent*Not a single one of them can be adequately restricted to the level of a solitary subject--we readily claim that a subject feels the effects of economics and in turn effects economics, but there is no *economics of the subject*. Economics only begins at a much larger scale--at its smallest, it must be at least a relation between two people. There is no hidden cogito of these knowledges. No Descartes of modern science, able to deduce the effects of these domains on his experience through a solitary exercise of reason.
+
+It is only through mechanisms of quantification and the proliferation of information through channels of mass communication that any conception of such emergent domains, i.e., concepts the subject plays into but cannot conceive of on the individual level alone--concepts which cannot be reasoned out of a singular empirical or deductive logic--can be created. The individual, in her daily experience, does not experience the *economy* --she experiences job loss, wage decreases, price hikes, but never something which may be directly considered commensurate with this great beast of a thing called the *economy*. 
+
+In spite of this, *economy*, and these other emergent concepts, which can only truly manifest themselves on scales unfathomable and uncontrollable by a single actor, quickly enter the casual nexus of the individual. Suddenly, through operations of the media, the *economy* becomes the problem determined to be the root of the subject's localized issues. The loss of the job is not, after all not the fault of one's superiors who enforced the decision, they are only agents of the economy. Rather it is the grand notion of the *economy* itself that is to blame--this reasoning goes all the way to the top, rendering even the supreme executive, an employee of the economics--he must do what the analysis of this concept, its reification, and a firm belief in its reality wills. No individual is to blame--only the unfortunate results of collective action on the global scale--where, in this model, can the fired target their frustrations? Only at an entity, intangible and scarcely understood.
+
+Humanity's general movement away from religion was perhaps just a retouching of terms. The everyman still worships and bends to abstractions--they have only proliferated and present themselves not as entities or forms above or outside the world, but ones of the world, manifest within our space, immediate, and treatable. The question remains whether this firm determination that the concepts truly *are* treatable and manipulable is at all justified. In any case, the individual enters a state of endless futility--none of the steps he personally takes are guaranteed to affect these emergent concepts in the ways he desires, or, for that matter, affect them at all. 

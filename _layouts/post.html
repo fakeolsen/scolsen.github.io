@@ -4,13 +4,20 @@ layout: default
 <div class="post">
 	<div class="post-container">
 		<header class="post-header">
+			{% if page.categories contains 'note'%}
+			<blockquote><p style="font-style: italic; font-size:12px;">a note on:</p></blockquote>
+			{% endif %}
+			{% if page.categories contains 'note'%}
+			<h1 class="post-title" style="font-style:italic; text-transform:lowercase;">{{ page.title }}</h1>
+			{% else %}
 			<h1 class="post-title">{{ page.title }}</h1>
+			{% endif %}
 			<p class="info-content">{{ page.info }}</p>
 		</header>
 		<article class="post-content">
 			{{ content }}
 		</article>
-		<p class="datum">Scott Olsen <br>Philadelphia, Novemeber 2016</p>
+		<p class="datum">Scott Olsen <br>{{ page.place }}, {{ page.date | date: "%b %Y" }}</p>
 		<!--<span class="post-meta">
 			<div class="post-author">
 				<p>A piece by Scott Olsen <br> Published on: {{ page.date | date: "%b %-d, %Y" }}</p>

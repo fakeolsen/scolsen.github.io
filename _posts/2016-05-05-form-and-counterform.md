@@ -7,6 +7,7 @@ render: normal
 place: Philadelphia
 info: This essay explores a conceptual notion similar to the Foil through the characters of Macbeth. 
 ex: "In that arcane and scrupulous art known as typography there exists a notion fundamental to the construction of the letter, the basest of the typographer's elements: *Form and Counterform*. Perhaps notion is a misnomer. Form and Counterform is a relation of constitutive character--change one and you necessarily change the other. The form is the part of the letter we all recognize without difficulty--the actual strokes and shapes which make up the letters. The curves and angles of ink on the page. The counterform is a bit more subtle. It is comprised of the negative space surrounding the letter strokes--the empty innards of the letter o..."
+notes: "1. I suggest Willi Kunz's fantastic <i>Typography: Macro and Microaesthetics</i> which covers form, counter form, and many other points of typographic interest."
 ---
 
 {% comment %}
@@ -21,7 +22,7 @@ In that arcane and scrupulous art known as typography there exists a notion fund
 
 There are plenty of texts you can consult if you've been struck, suddenly, by the typographer's malady and find yourself drooling over letterforms <sup id ="fnref:1"> <a href="#fn:1" class="footnote">1</a> </sup>. Here however, I'd like to recommend form and counterform as a relational metaphor useful to the construction of *fiction*. 
 
-> **<a>1.</a>** I suggest Willi Kunz's fantastic **Typography: Macro and Microaesthetics** which covers form, counter form, and many other points of typographic interest.  
+
 
 While this concept is extensive and applies to, possibly, every element that goes into fiction, down to the base unit--the sentence (more on that in a post coming up) I think it is easiest to grasp in terms of characters. Let's take an example from an obscure play titled *Macbeth* Act 1 scene 3. Our characters: Three witches, Macbeth, and Banquo. We'll tackle the witches first. 
 

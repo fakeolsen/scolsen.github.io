@@ -2,3 +2,4 @@ _site
 .sass-cache
 _includes/.DS_Store
 .idea
+*-draft.md

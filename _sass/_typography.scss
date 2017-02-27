@@ -13,9 +13,9 @@ a {
 }
 
 blockquote p {
-  font-size: $font-body-size + 6px;
+  font-size: $small-font-size;
   font-family: $font-display;
-  line-height: $font-body-size + 18px;
+  line-height: $small-line-height;
   color: $link-color;
 }
 
@@ -28,11 +28,12 @@ figcaption {
 
 h1 {
   font-family: $font-display;
-  font-size: 36px;
+  font-size: 18px;
   line-height: 40px;
-  font-weight:300;
-  margin-bottom: $spacing-unit + 20px;
-  text-align: center;
+  font-weight:500;
+  margin-bottom: $spacing-unit;
+  //font-style: italic;
+  //text-align: center;
   //letter-spacing: 0.1em;
 }
 
@@ -59,6 +60,8 @@ h4 {
 
 .site-title {
   font-weight: 500;
+  font-size:$small-font-size;
+  line-height: $small-line-height;
 }
 
 .current-page-indicator {
@@ -71,15 +74,15 @@ h4 {
 .info-content {
   font-size: $small-font-size;
   line-height: $small-line-height;
-  font-weight: 500;
+  font-weight: 400;
   display:none;
 }
 
 .email-link {
-  font-weight: 500;
+  font-weight: 400;
   font-family: $font-link;
   font-size: $small-font-size;
-  display: block;
+  line-height: $small-line-height;
 }
 
 .post-content p {
@@ -102,11 +105,11 @@ h4 {
 }
 
 .page-title {
-  font-size: 18px;
-  font-family:$font-display;
+  font-size: 12px;
+  font-family:$font-body;
   font-weight:300;
-  opacity: 0.6;
-  margin-bottom: $spacing-unit;
+  opacity: 1;
+  margin-bottom: 10px;
 }
 
 .info-content-link {
@@ -117,9 +120,9 @@ h4 {
 }
 
 .post-title-link {
-  font-family:$font-display;
-  font-size: 64px;
-  line-height: 68px;
+  font-family:$font-link;
+  font-size: $small-font-size;
+  line-height: $small-line-height;
 }
 
 .critique-prelude {
@@ -127,12 +130,13 @@ h4 {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B"; 
+  display:none;
 }
 
 .critique-work {
   text-align: center;
-  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B"; 
+  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B", serif;
+  display:none;
 }
 
 .quotation {
@@ -140,6 +144,22 @@ h4 {
 }
 
 .datum {
-  font-family: "Chronicle Hairline Cond A", "Chronicle Hairline Cond B"; 
-  font-style: italic;
+  font-family: $font-link;
+  font-size: $small-font-size;
+  width:100%;
+  margin-bottom:14px;
+}
+
+.page-link {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+}
+
+
+.post-notes {
+  font-size: $small-font-size;
+  font-family: $font-display;
+  line-height: $small-line-height;
+  margin-bottom:$spacing-unit;
+  //color: $link-color;
 }

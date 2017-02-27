@@ -17,7 +17,11 @@ layout: default
 		<article class="post-content">
 			{{ content }}
 		</article>
-		<p class="datum">Scott Olsen <br>{{ page.place }}, {{ page.date | date: "%b %Y" }}</p>
+		<p class="datum">Scott Olsen -- {{ page.place }}, {{ page.date | date: "%b %Y" }}</p>
+		{% if page.notes %}
+		<h2 class="page-title">Notes</h2>
+		<p class="post-notes">{{ page.notes }}</p>
+		{% endif %}
 		<!--<span class="post-meta">
 			<div class="post-author">
 				<p>A piece by Scott Olsen <br> Published on: {{ page.date | date: "%b %-d, %Y" }}</p>

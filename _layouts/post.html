@@ -20,7 +20,7 @@ layout: default
 		<p class="datum">Scott Olsen -- {{ page.place }}, {{ page.date | date: "%b %Y" }}</p>
 		{% if page.notes %}
 		<h2 class="page-title">Notes</h2>
-		<p class="post-notes">{{ page.notes }}</p>
+		<p class="post-notes" id="post-notes">{{ page.notes }}</p>
 		{% endif %}
 		<!--<span class="post-meta">
 			<div class="post-author">

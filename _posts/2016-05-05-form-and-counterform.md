@@ -20,7 +20,7 @@ As a work-around, there is an alt layout for image heavy posts. Use image heavy 
 
 In that arcane and scrupulous art known as typography there exists a notion fundamental to the construction of the letter, the basest of the typographer's elements: *Form and Counterform*. Perhaps notion is a misnomer. Form and Counterform is a relation of constitutive character--change one and you necessarily change the other. The form is the part of the letter we all recognize without difficulty--the actual strokes and shapes which make up the letters. The curves and angles of ink on the page. The counterform is a bit more subtle. It is comprised of the negative space surrounding the letter strokes--the empty innards of the letter o.  
 
-There are plenty of texts you can consult if you've been struck, suddenly, by the typographer's malady and find yourself drooling over letterforms <sup id ="fnref:1"> <a href="#fn:1" class="footnote">1</a> </sup>. Here however, I'd like to recommend form and counterform as a relational metaphor useful to the construction of *fiction*. 
+There are plenty of texts you can consult if you've been struck, suddenly, by the typographer's malady and find yourself drooling over letterforms <sup id ="fnref:1"> <a href="#post-notes" class="footnote">1</a> </sup>. Here however, I'd like to recommend form and counterform as a relational metaphor useful to the construction of *fiction*. 
 
 
 

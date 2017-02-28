@@ -112,6 +112,15 @@ h4 {
   margin-bottom: 10px;
 }
 
+.site-description {
+  font-size: $small-font-size;
+  font-family:$font-body;
+  font-weight:300;
+  opacity: 1;
+  margin-top: 4px;
+}
+
+
 .info-content-link {
   font-size: $small-font-size;
   line-height: $small-line-height + 14px;

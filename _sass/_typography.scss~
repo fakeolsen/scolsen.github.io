@@ -28,7 +28,7 @@ figcaption {
 
 h1 {
   font-family: $font-display;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 40px;
   font-weight:500;
   margin-bottom: $spacing-unit;
@@ -38,13 +38,13 @@ h1 {
 }
 
 h2 {
-  font-family: Karbon;
+  font-family: $font-link;
   font-size: $font-body-size;
   color: $grey-color;
 }
 
 h4 {
-  font-family: Karbon;
+  font-family: $font-link;
   letter-spacing: 0.4em;
   color: $grey-color;
   font-size: 14px;
@@ -81,8 +81,8 @@ h4 {
 
 .email-link {
   font-weight: 400;
-  font-family: Karbon;
-  font-size: $font-body-size;
+  font-family: $font-link;
+  font-size: $small-font-size;
   line-height: $small-line-height;
 }
 
@@ -106,8 +106,8 @@ h4 {
 }
 
 .page-title {
-  font-size: 14px;
-  font-family: Karbon;
+  font-size: 12px;
+  font-family:$font-body;
   font-weight:300;
   opacity: 1;
   margin-bottom: 10px;

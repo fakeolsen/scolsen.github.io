@@ -48,13 +48,7 @@ $narrow: 1500px;
     }
 }
 
-//self-hosted-fonts//
 
-@font-face {
-    font-family: 'Karbon';
-    src: url('../fonts/KarbonLight.woff') format('woff');
-    font-style: normal;
-}
 
 // import partials from `sass_dir` (defaults to `_sass`)
 @import

@@ -131,7 +131,8 @@ h4 {
 }
 
 .post-title-link {
-  font-family:$font-link;
+  font-family: $font-display;
+  font-style: italic;
   font-size: $small-font-size;
   line-height: $small-line-height;
 }

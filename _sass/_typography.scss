@@ -81,7 +81,7 @@ h4 {
 
 .email-link {
   font-weight: 400;
-  font-family: $font-link;
+  font-family: $font-display;
   font-size: 11px;
   line-height: $small-line-height;
 }
@@ -97,7 +97,8 @@ h4 {
 }
 
 .post-author p{
-  font-family: $font-link;
+  font-family: $font-display;
+  font-style: italic;
   font-size: $small-font-size;
 }
 

@@ -2,8 +2,9 @@
 p {
   font-family: $font-body;
   font-size: $font-body-size;
-  line-height: $body-line-height;
+  line-height: 27px;
   font-weight: 300;
+  opacity:0.9;
 }
 
 
@@ -87,7 +88,7 @@ h4 {
 }
 
 .post-content p {
-  margin-bottom: 14px;
+  margin-bottom: 30px;
 }
 
 .mobile-menu-button {

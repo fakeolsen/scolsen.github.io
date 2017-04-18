@@ -2,7 +2,7 @@
 layout: post
 title: "Form and Counterform"
 date: 2016-04-21 12:00:00
-categories: essay 
+categories: 
 render: normal
 place: Philadelphia
 info: This essay explores a conceptual notion similar to the Foil through the characters of Macbeth. 

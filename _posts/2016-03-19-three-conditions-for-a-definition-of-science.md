@@ -2,7 +2,7 @@
 layout: post
 title: "Three Conditions for a Definition of Science"
 date: 2016-03-19 12:00:00
-categories: writing philosophy essay feature
+categories: writing philosophy 
 render: normal
 place: Philadelphia
 info: This piece explores three potential conditions for a definition of science.

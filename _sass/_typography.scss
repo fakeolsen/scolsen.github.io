@@ -14,7 +14,7 @@ a {
 }
 
 blockquote p {
-  font-size: $small-font-size;
+  font-size: 12px;
   font-family: $font-display;
   line-height: $small-line-height;
   color: $link-color;
@@ -32,7 +32,7 @@ h1 {
   font-size: 16px;
   line-height: 40px;
   font-weight:500;
-  margin-bottom: $spacing-unit;
+  margin-bottom: 24px;
   //font-style: italic;
   //text-align: center;
   //letter-spacing: 0.1em;
@@ -131,7 +131,7 @@ h4 {
 
 .post-title-link {
   font-family: $font-display;
-  font-size: $small-font-size;
+  font-size: 12px;
   line-height: $small-line-height;
 }
 
@@ -173,4 +173,23 @@ h4 {
   line-height: $small-line-height;
   margin-bottom:$spacing-unit;
   //color: $link-color;
+}
+
+.footnotes li {
+  font-size: $small-font-size;
+  font-family: $font-display;
+  line-height: $small-line-height;
+}
+
+.footnotes p {
+  font-size: $small-font-size;
+  font-family: $font-display;
+  line-height: $small-line-height;
+}
+
+.footnote {
+  font-size: $small-font-size;
+  margin-left: 2px;
+  font-family: $font-display;
+  color: #333;
 }

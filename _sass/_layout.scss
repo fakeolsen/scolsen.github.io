@@ -74,9 +74,9 @@ svg {
     margin-top: $spacing-unit / 2;
     top: 10px;
     display:flex;
-    justify-content:center;
     align-items:center;
-    padding: 0 ;
+    padding: 0;
+    border-bottom: 1px solid #333;
   }
 }
 
@@ -107,7 +107,6 @@ svg {
     text-align:center;
     float:none;
     position: relative;
-    width: auto;
   }
 }
 

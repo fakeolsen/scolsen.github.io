@@ -15,9 +15,9 @@ a {
 
 blockquote p {
   font-size: 12px;
-  font-family: $font-display;
+  font-weight: 500; 
+  font-family: $font-body;
   line-height: $small-line-height;
-  color: $link-color;
 }
 
 figcaption {
@@ -62,8 +62,11 @@ h4 {
 .site-title {
   font-family: $font-display; 
   font-weight: 400;
-  font-size:11px;
+  font-size: 32px;
   line-height: $small-line-height;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .current-page-indicator {
@@ -108,17 +111,19 @@ h4 {
 }
 
 .page-title {
-  font-style: italic;
   font-weight:200;
   opacity: 0.8;
 }
 
 .site-description {
   font-size: $small-font-size;
-  font-family:$font-body;
-  font-weight:300;
+  font-family: $font-body;
+  font-weight: 300;
   opacity: 1;
   margin-top: 4px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 
@@ -150,13 +155,15 @@ h4 {
 }
 
 .quotation {
-  color:$link-color;
+    font-family: $font-body;
+    line-height: 27px;
+    font-weight: 400;
 }
 
 .datum {
-  font-family: $font-display;
+  font-family: $font-body;
   font-style: italic;
-  font-size: $small-font-size;
+  font-size: 14px;
   width:100%;
   margin-bottom:14px;
 }
@@ -166,7 +173,6 @@ h4 {
   line-height: $small-line-height;
 }
 
-
 .post-notes {
   font-size: $small-font-size;
   font-family: $font-display;
@@ -175,15 +181,21 @@ h4 {
   //color: $link-color;
 }
 
+.footnotes {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
 .footnotes li {
   font-size: $small-font-size;
-  font-family: $font-display;
+  font-family: "Surveyor SSm A", "Surveyor SSm B", Georgia, serif;
   line-height: $small-line-height;
 }
 
 .footnotes p {
   font-size: $small-font-size;
-  font-family: $font-display;
+  font-family: "Surveyor SSm A", "Surveyor SSm B", Georgia, serif;
   line-height: $small-line-height;
 }
 

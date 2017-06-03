@@ -19,21 +19,21 @@ It remains unclear. We'll call it a drive to worship---that art and religion are
 
 But this is a fickle god who requires constant sacrifice. You must bring a lamb to altar daily. What form of hecatomb does art demand? What do we have to stake for the blessing of that old deity? A good friend of mine (whom I only wish I could sit down and have a conversation with---alas, I settle with stealing her words), has compiled a neat list, at least for those of us drawn to ink, others may substitute ears for eyes: 
 
-<p class="quote">"You stand to lose your youth, your eyesight, your self-respect, and whatever
+<p class="quote" id="q:1">"You stand to lose your youth, your eyesight, your self-respect, and whatever
 potentialities you may have had in other directions, and if the worst comes to
 the worst, remember, nobody promised you anything..."<sup id ="fnref:1"> <a
 href="#fn:1" class="footnote">1</a> </sup></p>
 
-> **<a id="fn:1">1.</a>** Katherine Anne Porter -  Collected Stories & Other Writings (New York: Library of America, 2008)
+> **<a id="fn:1" href="#q:1">1.</a>** Katherine Anne Porter -  Collected Stories & Other Writings (New York: Library of America, 2008)
 
 Nothing to shrug at---nothing to shy from either, for those who catch the other-worldly hum of this god's voice find worship a *necessity*, a vocation. Some go so far as to *martyr* themselves in the name of this calling---at least those that are serious. A little trick for picking out *true* artists: they carry bottomless libation bowls. Yes, those true, those impassioned, those *mad* artists are always bowing, kneeling, prostrate. 
 
 And what's the end to all this devoted religious experience? As my friend told us---possibly nothing. But what saint isn't content with the private bliss between her and her god? Isn't content with their ceaselessly renewed struggles, spats, and schisms? A saint suffers no reward. Their final end is a gift given, not received. I defer to my companion's noble tongue again, more pious and enlightened than my own:
 
-<p class="quote">"Well, if you are going to throw all that, except the self-respect, into the ash
+<p class="quote" id="q:2">"Well, if you are going to throw all that, except the self-respect, into the ash
 can, you may as well, if you wish to write, be as good a writer as you can, say
 what you think and feel, add a little something, even if it's the merest
 fraction of an atom, to the sum of human achievement."<sup id ="fnref:2"> <a
 href="#fn:2" class="footnote">2</a> </sup></p>
 
-> **<a id="fn:2">2.</a>** Katherine Anne Porter -  Collected Stories & Other Writings (New York: Library of America, 2008)
+> **<a id="fn:2" href="#q:2">2.</a>** Ibid. <a href="#q:1">(1)</a>

@@ -332,17 +332,140 @@ width:100%;
   margin-bottom: $spacing-unit * 2;
 }
 
-.post-title-link {
-  font-weight: 400;
+/////posts/////
+.post{
+    margin-top:100px;
+    float:left;
+        @include media-query($on-palm){
+        margin-top:150px;
+    }
+}
+
+.post .post-meta{
+    width:80%;
+    float:right;
+    font-family: $font-heading;
+    font-size: $small-font-size;
+    font-weight:500;
+    line-height:27px;
+@include media-query($small-desktop) {
+        width:80%;
+    }
+    @include media-query($on-laptop) {
+        width:100%;
+        float:left;
+    }
+    @include media-query($on-palm) {
+        width:100%;
+        float:left;
+    }
 }
 
 .post-excerpt {
   margin-top: $spacing-unit / 10;
 }
 
-.post-author {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit / 2;
+.post-title {
+     font-family:$font-heading;
+     font-size:$heading-size;
+     color:$black-color;
+    @include media-query($on-laptop) {
+        //
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+    margin-top:40px;
+    width:100%;
+    float:left;
+    @include media-query($on-laptop) {
+        //
+    }
+    @include media-query($on-palm) {
+       //
+    }
+    h2 {
+       font-family:$font-heading;
+       font-size:$font-body-size;
+       font-weight:700;
+       margin-bottom:-$body-line-height;
+       float:left;
+       width:100%;
+        @include media-query($on-laptop) {
+            //
+        }
+    }
+    h3 {
+        font-size: 26px;
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+.post-content p{
+    width:80%;
+    float:right;
+@include media-query($small-desktop) {
+        width:80%;
+    }
+    @include media-query($on-laptop) {
+        width:100%;
+        float:left;
+    }
+    @include media-query($on-palm) {
+        width:100%;
+        float:left;
+    }
+}
+
+.post-content blockquote {
+    width:100%;
+    float:left;
+    margin-bottom:23px;
+    @include media-query($on-laptop) {
+        //
+    }
+    @include media-query($on-palm) {
+       //
+    }
+}
+
+.post-content blockquote p {
+    float:left;
+    margin-right:0;
+    font-size:$small-font-size;
+    width:100%;
+    padding:0;
+    font-weight: 400;
+    font-family:$font-heading;
+    line-height:$small-line-height;
+    margin-bottom:0;
+    @include media-query($on-palm) {
+        width:100%;
+        float:left;
+        margin-left:0;
+        margin-bottom:10px;
+    }
+}
+
+.post-content blockquote a:first-child{
+    float:left;
+    margin-right:0;
+    font-size:10px;
+    width:100%;
+    padding:0;
+    font-weight: 300;
+    line-height:12px;
+    margin-bottom:0;
+    border-bottom:1px solid $black-color;
 }
 
 //notes styling//
@@ -399,12 +522,12 @@ figcaption {
   }
 }
 
-////critiques////
-
-.critique-prelude {
-  text-align: center;
+.continue-link-hero{
+    font-family: $font-link;
+    font-size:$font-body-size;
 }
 
-.critique-work {
-  margin-bottom: $spacing-unit !important;
+.quote{
+    font-family:$font-heading;
+    font-weight:800;
 }

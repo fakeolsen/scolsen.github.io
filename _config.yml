@@ -2,7 +2,7 @@
 title: olsen.works
 email: scg.olsen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  The personal site of Scott Olsen.
+  The personal site of Scott Christopher Olsen.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://olsen.works" # the base hostname & protocol for your site
 location: Philadelphia

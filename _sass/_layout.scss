@@ -369,7 +369,7 @@
 }
 
 .post .post-meta{
-    width:70%;
+    width:80%;
     float:right;
     font-family: $font-heading;
     font-size: $small-font-size;
@@ -438,7 +438,7 @@
 }
 
 .post-content p{
-    width:70%;
+    width:80%;
     float:right;
 @include media-query($small-desktop) {
         width:80%;
@@ -526,4 +526,9 @@ font-weight:700;
 .continue-link-hero{
     font-family: $font-link;
     font-size:$font-body-size;
+}
+
+.quote{
+    font-family:$font-heading;
+    font-weight:800;
 }

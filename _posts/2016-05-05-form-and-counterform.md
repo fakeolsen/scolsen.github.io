@@ -12,7 +12,7 @@ In that arcane and scrupulous art known as typography there exists a notion fund
 
 There are plenty of texts you can consult if you've been struck, suddenly, by the typographer's malady and find yourself drooling over letterforms <sup id ="fnref:1"> <a href="#fn:1" class="footnote">1</a> </sup>. Here however, I'd like to recommend form and counterform as a relational metaphor useful to the construction of *fiction*. 
 
-> **<a>1.</a>** I suggest Willi Kunz's fantastic **Typography: Macro and Microaesthetics** which covers form, counter form, and many other points of typographic interest.  
+> **<a id="fn:1">1.</a>** I suggest Willi Kunz's fantastic **Typography: Macro and Microaesthetics** which covers form, counter form, and many other points of typographic interest.  
 
 While this concept is extensive and applies to, possibly, every element that goes into fiction, down to the base unit--the sentence (more on that in a post coming up) I think it is easiest to grasp in terms of characters. Let's take an example from an obscure play titled *Macbeth* Act 1 scene 3. Our characters: Three witches, Macbeth, and Banquo. We'll tackle the witches first. 
 

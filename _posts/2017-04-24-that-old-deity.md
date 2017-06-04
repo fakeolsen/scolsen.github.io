@@ -6,6 +6,7 @@ categories: essay
 render: normal
 place: Philadelphia
 abstract: A short piece on the dedication of the artist.
+language: en
 ---  
 What's that traveling on the spring air? What's this sweet sequence of notes that stirs us? Who plays this fine legato, who works the strings? We feel we're rising higher---what luck---we've stumbled upon a *true artist*. She sits in a vernal grove, oblivious to our eavesdropping---what do our ears matter? She plays for the trees, for the thought of some lover, for her spirit---this little woods has a mysterious quality---have we been drinking?---I can't be the only one feeling *intoxicated*. Animals bound about, wisterias blossom, petals fall, it's a dizzying, ethereal scene---are we hearing correctly?---there's something foreign in these tones. Is it possible this forest player is *channeling some beyond*---has some Artemis picked up a different bow?
 

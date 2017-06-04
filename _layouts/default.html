@@ -4,6 +4,9 @@
   <body>
     {% include header.html %}
     <div class="page-content">
+        {% if page.layout == 'post' %}
+             
+        {% endif %}
         {{ content }}
         {% include footer.html %}
     </div>

@@ -11,7 +11,7 @@ title: "olsen.works notes"
                       {% else %}
                       <ul class="post-list">
                       {% for post in site.posts %}
-                      {% if post.categories contains 'note'%}
+                      {% if post.categories contains 'note' and post.language == 'en' %}
                       <div class="post-module">
                             <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                             <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>

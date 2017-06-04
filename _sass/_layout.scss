@@ -361,10 +361,9 @@
 
 /////posts/////
 .post{
-    margin-top:100px;
-    float:left;
+    margin-top:200px;
         @include media-query($on-palm){
-        margin-top:150px;
+        margin-top:250px;
     }
 }
 
@@ -531,4 +530,15 @@ font-weight:700;
 .quote{
     font-family:$font-heading;
     font-weight:800;
+}
+
+.language-select{
+    width:100%;
+    float:left;
+    margin-bottom:8px;
+    font-size: $small-font-size;
+}
+
+.language-select a {
+    margin-left: 10px;
 }

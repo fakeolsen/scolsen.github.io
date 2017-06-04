@@ -17,7 +17,7 @@ title: "home"
   	<p class="page-description">This is the personal site of Scott Christopher Olsen. I use this site to post essays and scribblings on a variety of topics that interest me, particularly in the areas of philosophy and literature. You can contact me at <a href="mailto:scg.olsen@gmail.com?subject=Hello, Scott">scg.olsen@gmail.com</a>.</p>
 		<ul class="post-list">
 		{% for post in site.posts %}
-		{% if post.render contains 'normal'  %}
+		{% if post.render contains 'normal' and post.language == 'en' %}
 		<div class="post-module">
 	                 <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 	                  <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>

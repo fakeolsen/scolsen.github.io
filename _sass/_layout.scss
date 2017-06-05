@@ -5,7 +5,7 @@
         position:fixed;
         top:0px;
         z-index:20;
-        background-color:rgba(255,255,255,1);
+        background-color:rgba(255,255,255,0);
         transition:border-bottom, top;
         transition-duration: 300ms;
         transition-timing-function: ease;
@@ -14,6 +14,30 @@
            width:100%;
            margin-left:0;
            padding-left:14%;
+        }
+        @include media-query($on-palm) {
+           width:100%;
+           margin-left:0;
+           padding-left:0;
+        }
+}
+
+.site-header-hero {
+        width:44%;
+        margin-left:14%;
+        top:0px;
+        z-index:20;
+        position:absolute;
+        background-color:rgba(255,255,255,0);
+        transition:border-bottom, top;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        border-bottom:0px solid $black-color;
+        @include media-query($small-desktop) {
+           width:100%;
+           margin-left:0;
+           padding-left:14%;
+           position:fixed;
         }
         @include media-query($on-palm) {
            width:100%;
@@ -302,7 +326,7 @@
 
 .post-module{
     margin-top:40px;
-    float:left;
+    //float:left;
 }
 
 .post-abstract {
@@ -510,16 +534,17 @@ width:100%;
 /////hero section/////
 .post-title-hero{
 font-family:$font-heading;
-font-size:$heading-size;
+font-size:$heading-size + 40;
 float:left;
 width:40%;
-color:#fff;
 font-weight:700;
+line-height:82px;
 }
 
 .hero-description{
     width:60%;
     float:right;
+    margin-top:20px;
 }
 
 .continue-link-hero{

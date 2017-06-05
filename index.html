@@ -1,18 +1,25 @@
 ---
 layout: default
 title: "home"
+hero: false
 ---
 <div class="home">
-	<!--<div class="hero-wrapper">
-	{% for post in site.posts %}
+        {% for post in site.posts %}
 	{% if post.render contains 'project' %}
-		<h3 class="post-title-hero"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+	<div class="hero-wrapper">
+        <div class="hero-content">	
+<h3 class="post-title-hero"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 		<p class="hero-description">{{ post.abstract }}</p>
 		<a class="continue-link-hero" href="{{ post.url | prepend: site.baseurl }}">Explore</a>
+        </div>	
+        </div>
 	{%endif%}
 	{%endfor%}
-	</div>-->
+        {% if page.hero %}
+        <div class="wrapper-with-hero">
+        {% else %}
 	<div class="wrapper">
+        {% endif %}
 		<h1 class="page-title">Welcome</h1>
   	<p class="page-description">This is the personal site of Scott Christopher Olsen. I use this site to post essays and scribblings on a variety of topics that interest me, particularly in the areas of philosophy and literature. You can contact me at <a href="mailto:scg.olsen@gmail.com?subject=Hello, Scott">scg.olsen@gmail.com</a>.</p>
 		<ul class="post-list">

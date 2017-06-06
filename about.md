@@ -10,9 +10,9 @@ repository for essays and other projects. This site has a single raison d'être:
 taken upon the small pretension that perhaps my modest jottings might be interesting
 or useful to somebody, somewhere.
 
-Most of my posts tackle those towering subjects of philosophy and literature.
-Occasionally, I may post a musing or two about programming in the [Dispatch] [2]
-(be gentle, I am only a hobbyist). 
+Most of my posts tackle the towering subjects of philosophy and literature.
+Occasionally, I may post a musing or two about programming in the [Dispatch]
+[2]. 
 
 I'd be more than happy to chat about the pieces on this site, ideas, writers,
 writing, philosophy, or any other topic that strikes you as conversation worthy. You can reach me at my email: [scg.olsen@gmail.com] [1]. 

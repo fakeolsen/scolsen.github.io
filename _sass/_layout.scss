@@ -261,6 +261,16 @@
     }
 }
 
+.hero-description{
+    @include media-query($narrow) {
+        //
+    }
+
+     @include media-query($on-palm) {
+        //
+    }
+}
+
 .excerpt{
     //
 }
@@ -533,23 +543,23 @@ width:100%;
 
 /////hero section/////
 .post-title-hero{
-font-family:$font-heading;
-font-size:$heading-size + 40;
-float:left;
-width:40%;
-font-weight:700;
-line-height:82px;
+font-family:$font-body;
+font-size:72px;
+font-weight:300;
+line-height:86px;
+margin-bottom:36px;
+width:100%;
 }
 
-.hero-description{
-    width:60%;
-    float:right;
-    margin-top:20px;
+.post-title-hero a {
+    color:#333;
 }
 
 .continue-link-hero{
     font-family: $font-link;
     font-size:$font-body-size;
+    width:100%;
+    text-decoration:underline;
 }
 
 .quote{

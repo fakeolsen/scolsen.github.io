@@ -102,26 +102,33 @@ blockquote {
 }
 
 /////code formatting/////
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+pre
+{
+    font-size: 12px;
+    border-top: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-light;
+    //background-color: #eef;
+    width:80%;
+    float: right;
+    line-height:16px;
+    font-family:$font-code;
 }
 
 code {
     padding: 1px 5px;
+    font-family:$font-code;
 }
 
 pre {
-    padding: 8px 12px;
+    padding-top: 8px;
+    padding-bottom:8px;
     overflow-x: scroll;
 
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+        width:100%;
     }
 }
 
@@ -146,63 +153,20 @@ pre {
     }
 }
 
-.wrapper-with-hero {
-    animation-name: opLoad;
-    animation-duration:500ms;
-    animation-timing-function: linear;
-    animation-direction:forward;
-    max-width: 44%;
-    margin-top: 520px;
-    margin-left: 14%;
-    margin-right:50%;
-    @extend %clearfix;
-    @include media-query($small-desktop) {
-        max-width: 44%;
-        margin-right:40%;
-        margin-top: 0px;
-    }
-    @include media-query($on-palm) {
-        max-width: 80%;
-        margin-right:10%;
-        margin-left:10%;
-        margin-top: 0px;
-    }
-}
-
 .hero-wrapper{
     animation-name: opLoad;
     animation-duration:500ms;
     animation-timing-function: linear;
     animation-direction:forward;
-    border-bottom: 1px solid $black-color;
-    margin-bottom: 40px;
-    background-color: #333;
-    width:100%;
-    position:absolute;
-    top:0;
-    float:left;
-    //background-image: url("../images/blk.png");
+    max-width:44%;
+    margin-left:14%;
+    margin-bottom:110px;
+    margin-top:50px;
     @include media-query($small-desktop) {
        display:none; 
     }
     @include media-query($on-palm) {
        display:none; 
-    }
-}
-
-.hero-content {
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom:100px;
-    margin-top:120px;
-    padding:20px;
-    @extend %clearfix;
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
     }
 }
 

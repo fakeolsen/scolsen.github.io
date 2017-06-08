@@ -449,7 +449,6 @@
        font-family:$font-heading;
        font-size:$font-body-size;
        font-weight:700;
-       margin-bottom:-$body-line-height;
        float:left;
        width:100%;
         @include media-query($on-laptop) {
@@ -544,10 +543,10 @@ width:100%;
 /////hero section/////
 .post-title-hero{
 font-family:$font-body;
-font-size:72px;
+font-size:66px;
 font-weight:300;
-line-height:86px;
-margin-bottom:36px;
+line-height:78px;
+margin-bottom:12px;
 width:100%;
 }
 

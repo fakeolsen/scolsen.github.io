@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Digital Gamera: Learning the Shell"
+render: project
+abstract: There's a powerful little program you might have overlooked. You can use it to copy files, write a book, send email, or browse the internet. Let's learn how to use it.
+---
+<div class="home">
+    <div class="wrapper">
+        <h1 class="page-title">Digital Gamera: Learning the Shell</h1>
+        <p class="page-description">You'll find a collection of essays I've written here. Most are likely on the subjects of writing or philosophy, though I may occasionally veer off those courses. I hope you enjoy.</p>
+        <ul class="post-list">
+              {% for post in site.posts %}
+              {% if post.series contains 'shell'%}
+              <div class="post-module">
+                 <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
+                  <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+              {% endif %}
+              {% endfor %}
+        </ul>
+     </div>
+   </div>

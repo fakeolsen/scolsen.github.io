@@ -4,12 +4,12 @@ title: "home"
 hero: true
 ---
 <div class="home">
-        {% for post in site.posts %}
-	{% if post.render contains 'project' %}
+        {% for page in site.pages %}
+	{% if page.render contains 'project' %}
 	<div class="hero-wrapper">
-                <h1 class="post-title-hero"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-		<p class="hero-description">{{ post.abstract }}</p>
-		<a class="continue-link-hero" href="{{ post.url | prepend: site.baseurl }}">Explore</a>
+                <h1 class="post-title-hero"><a  href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+		<p class="hero-description">{{ page.abstract }}</p>
+		<a class="continue-link-hero" href="{{ page.url | prepend: site.baseurl }}">Explore</a>
         </div>
 	{%endif%}
 	{%endfor%}

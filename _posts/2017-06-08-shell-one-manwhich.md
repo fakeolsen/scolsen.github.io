@@ -83,5 +83,32 @@ As you dig deeper into the world of the shell and its plethora of commands,
 you'll find it's frequently helpful to use `man` to discover more detailed
 information about a particular command, or simply to refresh you memory.
 
-## pwd, ls, and cd test
-Now we'll cover the bread and butter.
+## pwd, ls, and cd 
+Now that we're acquainted with man and which, let's cover one of the shell's
+fundamental concepts: directories. Doubtless, you're already familiar with
+directories to some extent--probably through a GUI. You can access those same
+folders and their contents using the shell, and once you get the hang of it,
+you'll find that it's decidedly faster than clicking about with a mouse. 
+
+Like man and which, we'll begin with a command that doesn't *do* much of
+anything, but provides us with some crucial information. The `pwd` command will
+output the path, or directory, your current shell is pointing to. Unless you
+explicitly specify otherwise, the majority of commands and programs will execute
+within or against your current working directory by default. Much like man and
+which, `pwd` helps
+ensure you don't run anything unwittingly. It's important to know what you're
+doing.
+
+Our current working directory alone, while a useful nugget of information,
+leaves us wanting more. It's doubtless reasonable for us to want to know what
+files a directory contains, seeing as their god-given purpose is to store other
+directories and files. The limber and lightweight `ls` comes to the rescue.
+Like pwd, man, and which, ls is an informative tool, and doesn't manipulate the
+contents of your system. During our first foray into the shell, this gentle
+demeanor is quite the benefit. Running ls will print a list of the contents of
+your current directory.
+```sh
+
+``` 
+
+

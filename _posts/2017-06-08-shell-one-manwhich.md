@@ -2,7 +2,7 @@
 layout: post
 title: "Manwhich"  
 date:   2017-06-07 17:15:50
-render: normal
+render: none
 abstract: There's a powerful little program you might have overlooked. You can use it to copy files, write a book, send email, or browse the internet. Let's learn how to use it.
 series: shell
 language: en

@@ -1,2 +1,0 @@
-# scolsen.github.io
-Site

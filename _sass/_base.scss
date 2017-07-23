@@ -76,19 +76,20 @@ h1{
 /////links/////
 a {
     color: $link-color;
-    text-decoration:none;
-    transition:color;
+    transition:color, background-color;
     transition-duration: 300ms;
     transition-timing-function: ease;
+    background-color: #fff;
     &:visited {
         //
     }
 
     &:hover {
-        transition: color;
+        transition: color, background-color;
         transition-duration: 300ms;
         transition-timing-function: ease;
-        color:$black-color;
+        color:#fff;
+        background-color:#000;
    }
 }
 

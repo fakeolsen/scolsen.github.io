@@ -80,6 +80,7 @@
    font-size: $font-body-size;
    font-weight:700;
    color:$black-color;
+   text-decoration: none;
     &:visited {
         //
     }
@@ -108,16 +109,6 @@
         font-family:$font-heading;
         font-size: 12px;
         margin-left:20px;
-        color:$link-color;
-        transition:color;
-        transition-duration: 300ms;
-        transition-timing-function: ease;
-         &:hover{
-            color:$black-color;
-            transition:color;
-            transition-duration: 300ms;
-            transition-timing-function: ease;
-        }
         @include media-query($on-palm) {
            width:100%;
            float:left;
@@ -278,16 +269,9 @@
 .post-title-list a{
     font-size:$heading-size ;
     line-height:$body-line-height;
-    transition: color ;
-    transition-duration: 300ms;
-    transition-timing-function: ease;
     float:left;
     width:100%;
     &:hover{
-        transition: color, border-bottom, border-radius;
-        transition-duration: 300ms;
-        transition-timing-function: ease;
-        color:$black-color;
         border-bottom: 3px solid $black-color;
         border-radius: 4px;
     }
@@ -349,9 +333,8 @@
 }
 
 .post-link {
-    font-family: "Knockout 30 A", "Knocko;ut 30 B";
+    font-family: "Knockout 30 A", "Knockout 30 B";
     font-weight: 400;
-    color:#ff4743;
     margin:0;
     font-size:36px;
     line-height:1.3;
@@ -362,18 +345,6 @@
 .post-title-link {
     font-size:$font-body-size;
     margin-bottom:0;
-}
-
-.post-title-link a{
-    transition: color;
-     transition-duration: 300ms;
-     color:$link-color;
-    &:hover{
-        transition: color;
-        transition-duration: 300ms;
-        transition-timing-function: ease;
-        color:$black-color;
-    }
 }
 
 .post-categories{
@@ -388,7 +359,7 @@
     margin-bottom:0px;
     line-height:.5;
 }
-
+;
 .page-link{
     font-size: 14px;
 }

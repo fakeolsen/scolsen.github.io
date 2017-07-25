@@ -22,7 +22,6 @@ hero: true
 		<div class="post-module">
 	                 <h3 class="post-title-link"><a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 	                  <p class="post-abstract">{{ post.abstract | truncatewords: 100 }}</p>
-	                  <a class="continue-link" href="{{ post.url | prepend: site.baseurl }}">Read</a>
 	                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 	              </div>
 		{%endif%}
